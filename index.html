@@ -3,10 +3,106 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/mcr2zgd.css" />
     <link rel="stylesheet" href="style.css" />
     <title>Fikir Medya</title>
   </head>
   <body>
-    <div class="container">Here Comes The Rain Again</div>
+    <!-- Splash Screen -->
+    <div class="splash-screen" id="splashScreen">
+      <img class="splash-screen__background" src="./assets/star-vector.png" />
+
+      <div class="splash-screen__wrapper">
+        <div class="splash-screen__text">
+          Dijital bir dünyada kültürün artan hızı, estetiği, markaları ve deneyimleri tekdüzeliğe <br />
+          sürüklemeye devam ediyor. Tüm markalar bu tekdüzeliğin olduğu okyanusu aynı yerden; <br />
+          pahalı bir "aynılık adası" üzerinden izliyorlar. Bu durumda farklılaşma arayışında olanlar için yaratıcılık
+          <br />
+          -sadece- bir değerden öte gereklilik haline geldi.
+        </div>
+        <div class="splash-screen__extra">
+          Markalarımızı vasatlıktan kurtarmak için onları bu aynılık adasından çıkaracak <br />
+          cesur fikri arıyoruz.
+        </div>
+      </div>
+      <div class="splash-screen__line">
+        <img src="./assets/line.png" />
+      </div>
+    </div>
+
+    <!-- Main Page Start Here -->
+    <div class="container">
+      <header class="header">
+        <img class="header__banner" src="./assets/homepage-banner.png" />
+        <!-- Circular Effect Text -->
+        <div class="circular__wrapper">
+          <img class="circular__text" src="./assets/circular-text.svg" />
+          <!-- <img class="circular__line" src="./assets/magenta-line.svg" /> -->
+        </div>
+      </header>
+      <main class="main">
+        <!-- Doping Start Here -->
+        <section class="doping__wrapper">
+          <div class="doping__image">
+            <img class="doping__image--svg" src="./assets/doping.svg" />
+            <img src="./assets/asteriks-sm.svg" />
+          </div>
+          <div class="doping__desc">
+            <div class="doping__title">
+              <h3 class="doping__title--text">
+                Deneyim Odaklı <br />
+                Pazarlama
+              </h3>
+              <img />
+            </div>
+            <div class="doping__text">
+              <p class="doping__text--first">
+                Sıkıcı bir dijital deneyimin gerçek maliyeti, geleneksel reklamcılığa kıyasla daha incelikli ve
+                karmaşıktır ve doğal olarak hesaplanması daha zordur. Bunun bir nedeni, modern marka deneyimlerinin,
+                sosyal medyadan web ve uygulamalara, oradan da deneyimsel etkileşimlere kadar uzanan çok kanallı
+                yapısıdır.
+              </p>
+              <p class="doping__text--second">
+                Deneyim Odaklı Pazarlama ile çalıştığımız ve çalışacağımız markalara doping yapıyoruz.
+              </p>
+              <div class="doping__link--wrapper">
+                <a class="doping__link" href="#">Daha fazla oku</a>
+                <img src="./assets/arrow-link.svg" />
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- Doping End Here -->
+
+        <!-- Our Works Start Here -->
+        <!-- Our Works End Here -->
+      </main>
+      <!-- Main Page End Here -->
+
+      <!-- Footer Start Here -->
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <img src="./assets/footer-logo.svg" />
+          </div>
+          <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+          <div class="footer__social">
+            <img />
+            <img />
+            <img />
+            <img />
+          </div>
+        </div>
+      </footer>
+      <!-- Footer End Here -->
+    </div>
+
+    <script src="script.js"></script>
   </body>
 </html>
