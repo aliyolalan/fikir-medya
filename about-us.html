@@ -3,9 +3,180 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="https://use.typekit.net/mcr2zgd.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>About Us</title>
   </head>
   <body>
-    <div>Merhaba Hakkımızda Sayfası</div>
+    <header class="h-screen flex flex-col bg-magenta relative">
+      <nav class="flex w-full mx-auto flex-row items-center justify-between px-20 py-4">
+        <div class="flex flex-row gap-x-10 items-center">
+          <img class="circular-text" src="./assets/menu-circular.svg" />
+          <p class="font-abril text-breadcrumb"><span class="text-white">Anasayfa / </span>Biz Kimiz?</p>
+        </div>
+        <div>MENU</div>
+      </nav>
+      <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star.png" />
+      <img class="absolute bottom-0 left-0 rotate-180 w-4/12" src="./assets/right-top-star.png" />
+      <div class="container justify-center mx-auto flex flex-col mt-20">
+        <h2 class="text-6xl font-abril text-white">Tutkumuz,<br />fikirlerimiz…</h2>
+        <div class="flex flex-row items-start gap-x-12 mt-10">
+          <img class="mt-4" src="./assets/h-line.svg" />
+          <div>
+            <p class="text-white text-description">
+              Tek bir çatı altında benzersiz yeteneklere ve bilgi birikimi çeşitliliğine ev sahipliği yapıyoruz.<br />
+              İlerici ve girişimci bir iş modeliyle çalışıyoruz. Sadece “dijital” sadece “reklam” değil,<br />
+              iş çözümleri yaratmak için odaklanıyoruz. Çalışma şeklimizle geleneksel olana <br />
+              başkaldırıyoruz.
+            </p>
+            <p class="text-white text-description mt-8">
+              Çok farklı disiplinlerden gelen bir ekiple markanın sorununu buluyor/dinliyor ve ona göre<br />
+              eşsiz fikirler ve öneriler getiriyoruz. Önyargısız, risk alabilen ve birlikte çalışmaktan keyif <br />
+              alan tutkulu bir ekibiz.
+            </p>
+          </div>
+        </div>
+      </div>
+    </header>
+    <main class="bg-black">
+      <section>
+        <div class="container mx-auto my-24 flex flex-row justify-center gap-x-20 text-white">
+          <div>
+            <p class="text-description">Biz az sayıda ama toplamda</p>
+            <img class="my-5" src="./assets/300.svg" />
+            <p class="text-description text-magenta">kampanyayı hayata geçirmiş,</p>
+          </div>
+          <div>
+            <p class="text-description">ulusal ve uluslararası</p>
+            <img class="my-5" src="./assets/200.svg" />
+            <p class="text-description text-magenta">ödüllü tecrübeli bir ekibiz.</p>
+          </div>
+        </div>
+      </section>
+
+      <section>
+        <div class="container mx-auto my-20 flex flex-row justify-between">
+          <div class="flex flex-col basis-1/4 justify-between">
+            <div class="flex flex-col text-white">
+              <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
+                <p class="text-magenta text-8xl">6</p>
+                <p>Medya Planlama Departmanı</p>
+              </div>
+              <p class="pt-2 ml-20 text-xl">Medya Planlama Uzmanı</p>
+            </div>
+            <div class="flex flex-col text-white">
+              <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
+                <p class="text-magenta text-8xl">5</p>
+                <p>Teknoloji Departmanı</p>
+              </div>
+              <p class="pt-2 ml-20 text-xl">Teknoloji Direktörü<br />Front End<br />Back End<br />Mobil</p>
+            </div>
+            <div class="flex flex-col text-white">
+              <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
+                <p class="text-magenta text-8xl">4</p>
+                <p>Etkinlik<br />ve Operasyon Departmanı</p>
+              </div>
+              <p class="pt-2 ml-20 text-xl">Marka Yöneticisi<br />Marka Yöneticisi</p>
+            </div>
+          </div>
+          <img class="w-7/12 basis-2/4" src="./assets/about-us.png" />
+          <div class="flex flex-col basis-1/4 justify-between">
+            <div class="flex flex-col text-white">
+              <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
+                <p class="text-magenta text-8xl">1</p>
+                <p>Kreatif Departmanı</p>
+              </div>
+              <p class="pt-2 ml-16 text-xl">
+                Kreatif Direktör Reklam Yazarı Sanat Yönetmeni Sanat Yönetmeni Jr. Reklam Yazarı Jr. Sanat Yönetmeni
+              </p>
+            </div>
+            <div class="flex flex-col text-white">
+              <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
+                <p class="text-magenta text-8xl">2</p>
+                <p class="">Strateji Departmanı</p>
+              </div>
+              <p class="pt-2 ml-20 text-xl">Strateji Direktörü<br />Stratejist</p>
+            </div>
+            <div class="flex flex-col text-white">
+              <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
+                <p class="text-magenta text-8xl">3</p>
+                <p class="">Prodüksiyon Departmanı</p>
+              </div>
+              <p class="pt-2 ml-20 text-xl">Prodüksiyon Direktörü<br />Kurgu Yönetmeni<br />Görüntü Yönetmeni</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container mx-auto my-20 flex flex-col items-center justify-center">
+          <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
+          <div class="form-wrapper font-acumin">
+            <form action="" class="form" id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="first">Adınız ve Soyadınız</label>
+                <input id="first" class="form-input" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last">E-posta Adresiniz</label>
+                <input id="last" class="form-input" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="color">Telefon Numaranız</label>
+                <input id="color" class="form-input" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="color">Firma / Kuruluş İsminiz</label>
+                <input id="color" class="form-input" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="color">Notunuz</label>
+                <input id="color" class="form-input" type="text" />
+              </div>
+            </form>
+            <button
+              class="text-white font-acumin mt-10 mb-12 text-description px-12 rounded-lg bg-magenta"
+              type="submit"
+              form="contact-form"
+            >
+              Gönder
+            </button>
+            <div class="flex flex-row justify-between items-center w-full text-description text-white">
+              <div class="flex flex-row items-center gap-x-3">
+                <img src="./assets/whatsapp.svg" />
+                <p class="text-lg">Şimdi Mail Atın</p>
+                <a class="text-sm" href="mailto:info@fikirmedya.com.tr">info@fikirmedya.com.tr</a>
+              </div>
+              <div class="flex flex-row items-center gap-x-3">
+                <img src="./assets/phone.svg" />
+                <p class="text-lg">Şimdi Arayın</p>
+                <a class="text-sm" href="tel:5321117999">0532 111 79 99</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer__wrapper">
+          <div class="footer__logo">
+            <img src="./assets/footer-logo.svg" />
+          </div>
+          <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+          <div class="footer__social">
+            <img src="./assets/facebook.svg" />
+            <img src="./assets/youtube.svg" />
+            <img src="./assets/instagram.svg" />
+            <img src="./assets/linkedin.svg" />
+          </div>
+        </div>
+      </footer>
+    </main>
+    <script src="script.js"></script>
   </body>
 </html>
