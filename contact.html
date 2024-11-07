@@ -12,55 +12,39 @@
     <link rel="stylesheet" href="https://use.typekit.net/mcr2zgd.css" />
     <link rel="stylesheet" href="main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Hizmetlerimiz</title>
+    <title>İletişim</title>
   </head>
   <body>
-    <header class="h-5/6 flex flex-col relative pb-20">
+    <header class="h-5/6 bg-magenta flex flex-col relative pb-20">
       <nav class="flex w-full mx-auto flex-row items-center justify-between px-20 py-4">
         <div class="flex flex-row gap-x-10 items-center">
-          <img class="circular-text" src="./assets/menu-circular-magenta.svg" />
-          <p class="font-abril text-magenta text-breadcrumb">
-            <span class="text-white">Anasayfa / </span>Hizmetlerimiz
-          </p>
+          <img class="circular-text" src="./assets/menu-circular.svg" />
+          <p class="font-abril text-black text-breadcrumb"><span class="text-white">Anasayfa / </span>Hizmetlerimiz</p>
         </div>
         <div>MENU</div>
       </nav>
-      <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star-magenta.svg" />
-      <div class="container justify-center mx-auto flex flex-col mt-20">
-        <h2 class="text-6xl font-abril text-white">Ne Sunuyoruz</h2>
-        <div class="flex flex-row items-start gap-x-12 mt-10">
-          <img class="mt-4" src="./assets/h-line.svg" />
-          <div>
-            <p class="text-white text-description">
-              Genç ve yeniyi takip eden, meraklı bir ekiple; bizimle yola çıkan tüm markalar ve paydaşlarımız<br />
-              için büyüyen ve etkileşimi artıran fikirler üretiyoruz. Yapay zeka araçlarını kullanarak yeni<br />
-              stratejiler geliştiriyor, kreatif süreçlerde daha dinamik ve çarpıcı işler üretiyoruz.
-            </p>
+      <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star.png" />
+      <div class="container justify-center mx-auto flex flex-col mt-20 text-description">
+        <p>Adalet Mahallesi 1600 Sokak No: 3A Bayraklı İzmir</p>
+        <a class="underline" href="#">0532 111 79 99</a>
+        <a class="underline" href="#">info@fikirmedya.com.tr</a>
+        <div class="mt-10 flex flex-col gap-y-8">
+          <div class="flex flex-row items-center gap-x-3">
+            <img src="./assets/whatsapp.svg" />
+            <p class="text-lg">Şimdi Mail Atın</p>
+          </div>
+          <div class="flex flex-row items-center gap-x-3">
+            <img src="./assets/phone.svg" />
+            <p class="text-lg">Şimdi Arayın</p>
+          </div>
+          <div class="flex flex-row items-center gap-x-3">
+            <img src="./assets/address.svg" />
+            <p class="text-lg">Yol Tarifi Alın</p>
           </div>
         </div>
       </div>
     </header>
     <main>
-      <section class="bg-magenta relative">
-        <div class="container mx-auto py-20">
-          <h2 class="font-abril text-black pb-10 text-6xl">Hizmetlerimiz</h2>
-          <p class="text-description">
-            Yapay zeka destekli pazarlama stratejileri geliştirmek ve hayata geçirmek<br />
-            Dijital ve konvansiyonel mecralarda kreatif süreçleri yönetmek ve uygulamak<br />
-            İçerik pazarlaması ve üretimi<br />
-            Branded content<br />
-            Dijital kampanya<br />
-            Reklam kampanyası<br />
-            Sosyal medya yönetimi<br />
-            Markaların ihtiyaçlarına göre etkinlik stratejisi ve fikri geliştirmek, uygulamak, yönetmek ve etkinlik
-            iletişimi<br />
-            Deneyim odaklı pazarlama stratejileri ve uygulamaları<br />
-            Mobil uygulama tasarımı ve yazılımı<br />
-            Web sitesi tasarımı ve yazılımı<br />
-          </p>
-        </div>
-        <img class="absolute bottom-0 right-0 w-4/12 transform-img" src="./assets/right-top-star.png" />
-      </section>
       <section>
         <div class="container mx-auto mt-20 flex flex-col items-center justify-center">
           <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
@@ -109,21 +93,22 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__logo">
-            <img src="./assets/footer-logo.svg" />
-          </div>
-          <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-          <div class="footer__social">
-            <img src="./assets/facebook.svg" />
-            <img src="./assets/youtube.svg" />
-            <img src="./assets/instagram.svg" />
-            <img src="./assets/linkedin.svg" />
-          </div>
-        </div>
-      </footer>
     </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="./assets/footer-logo.svg" />
+        </div>
+        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="footer__social">
+          <img src="./assets/facebook.svg" />
+          <img src="./assets/youtube.svg" />
+          <img src="./assets/instagram.svg" />
+          <img src="./assets/linkedin.svg" />
+        </div>
+      </div>
+    </footer>
+
     <script src="script.js"></script>
   </body>
 </html>

@@ -35,6 +35,12 @@ body {
   font-family: "Abril Fatface", serif;
 }
 
+.blog-title {
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 44px;
+}
+
 .text-title {
   font-size: 36px;
   font-weight: 400;
@@ -47,6 +53,12 @@ body {
   line-height: 72px;
 }
 
+.detail-title {
+  font-size: 81px;
+  font-weight: 400;
+  line-height: 43px;
+}
+
 .text-link {
   font-size: 20px;
   font-weight: 400;
@@ -57,6 +69,12 @@ body {
   font-size: 14px;
   font-weight: 400;
   line-height: 43px;
+}
+
+.job-text {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 73px;
 }
 
 .text-white {
@@ -92,6 +110,10 @@ body {
   transform: scaleX(-1);
 }
 
+.radius {
+  border-radius: 12px 0 12px 12px;
+}
+
 /* Header */
 .header {
   height: 100vh;
@@ -117,13 +139,18 @@ body {
   justify-content: center;
   align-items: center;
   max-width: 800px;
-  min-width: 500px;
-  width: 800px;
+  width: 90%;
   padding: 0 0 40px 0;
   margin: 50px auto;
   box-shadow:
     0 15px 35px rgba(50, 50, 93, 0.1),
     0 5px 15px rgba(0, 0, 0, 0.07);
+}
+@media only screen and (max-width: 768px) {
+  .asd {
+    row-gap: 32px;
+    flex-direction: column;
+  }
 }
 
 .form {
@@ -160,7 +187,7 @@ body {
   background-color: #000;
   color: #fff;
   position: relative;
-  padding: 15px 0px 5px 0;
+  padding: 5px 0px 16px 0;
   width: 100%;
   outline: 0;
   border: 0;
@@ -196,4 +223,86 @@ body {
   display: flex;
   flex-direction: row;
   gap: 20px;
+}
+
+/* WORKS SECTION STYLES */
+.works {
+  max-width: 1581px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.works__title {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  margin-bottom: 64px;
+}
+
+.work__image {
+  border-radius: 18px;
+  max-width: 939px;
+}
+
+.work__info--title {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 43px;
+  text-align: left;
+  color: #ec008c;
+  margin-bottom: 16px;
+}
+
+.work__info--brand {
+  font-family: "acumin-pro", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.work__info--desc {
+  font-family: "acumin-pro", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+.doping__link--wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+  cursor: pointer;
+}
+
+.doping__link {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ec008c;
+  text-decoration: none;
 }
