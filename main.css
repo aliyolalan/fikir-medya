@@ -15,10 +15,12 @@ body {
 
 .container {
   max-width: 1280px !important;
+  margin: 0 auto;
 }
 
 .container-xl {
   max-width: 1536px !important;
+  margin: 0 auto;
 }
 
 .text-description {
@@ -43,6 +45,12 @@ body {
 
 .text-title {
   font-size: 36px;
+  font-weight: 400;
+  line-height: 44px;
+}
+
+.article-title {
+  font-size: 42px;
   font-weight: 400;
   line-height: 44px;
 }
@@ -117,19 +125,6 @@ body {
 /* Header */
 .header {
   height: 100vh;
-}
-
-.circular-text {
-  animation: anim 10s linear infinite;
-}
-
-@keyframes anim {
-  0% {
-    transform: rotate(0deg);
-  }
-  100% {
-    transform: rotate(360deg);
-  }
 }
 
 /* Form Input Styles */
@@ -305,4 +300,320 @@ body {
   line-height: 30px;
   color: #ec008c;
   text-decoration: none;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: black;
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-display: auto;
+}
+
+/* Splash Ekranı */
+.splash {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 100ms ease; /* Yukarı kayma animasyonu */
+  z-index: 20;
+}
+
+/* hidden sınıfı eklendiğinde yukarı kaydır */
+.splash.hiddenSplash {
+  transform: translateY(-100%);
+}
+
+/* Tam sayfa menü kaplaması */
+.full-page-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: white; /* Siyah yarı saydam arka plan */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transform: translateY(-100%); /* Menü başlangıçta görünmez */
+  transition: transform 0.5s ease;
+  z-index: 10;
+}
+
+/* Menü görünür olduğunda */
+.full-page-menu.active {
+  transform: translateY(0); /* Menü ekranın tamamını kaplar */
+}
+
+/* Typewriter Efekti için stil */
+.typewriter {
+  border-right: 3px solid white;
+  white-space: nowrap;
+  overflow: hidden;
+  display: inline-block;
+  animation:
+    typing 3s steps(30) 1s 1 normal both,
+    blink 0.75s step-end infinite;
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  50% {
+    border-color: transparent;
+  }
+}
+
+/* İkonların ve resimlerin dönme efekti için uygulanan stil */
+.circular {
+  animation: circular 15s linear infinite;
+}
+
+@keyframes circular {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+/* DOPING SECTION STYLES */
+.doping__wrapper {
+  width: 1200px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.doping__image {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.doping__image--sgv {
+  width: 355px;
+}
+
+.doping__desc {
+  display: flex;
+  flex-direction: row;
+  margin-top: 32px;
+}
+
+.doping__title {
+  display: flex;
+  flex-direction: column;
+  margin-right: auto;
+}
+
+.doping__title--text {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: 32px;
+  line-height: 43px;
+  color: #ec008c;
+}
+
+.doping__text {
+  width: 850px;
+}
+
+.doping__text--first {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: justify;
+}
+
+.doping__text--second {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 44px;
+  text-align: justify;
+  margin-top: 48px;
+  margin-bottom: 32px;
+}
+
+.doping__link--wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 16px;
+}
+
+.doping__link {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #ec008c;
+  text-decoration: none;
+}
+
+/* WORKS SECTION STYLES */
+.works {
+  max-width: 1581px;
+  margin: 80px auto;
+  display: flex;
+  flex-direction: column;
+}
+
+.works__title {
+  font-family: "acumin-pro", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 44px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.work {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  gap: 120px;
+  margin-bottom: 64px;
+}
+
+.work__image {
+  border-radius: 18px;
+}
+
+.work__info--title {
+  font-family: "Abril Fatface", serif;
+  font-weight: 400;
+  font-size: 42px;
+  line-height: 43px;
+  text-align: left;
+  color: #ec008c;
+  margin-bottom: 16px;
+}
+
+.work__info--brand {
+  font-family: "acumin-pro", sans-serif;
+  font-size: 32px;
+  font-weight: 400;
+  line-height: 43px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.work__info--desc {
+  font-family: "acumin-pro", sans-serif;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 44px;
+  text-align: left;
+  color: #ffffff;
+  margin-bottom: 32px;
+}
+
+.reverse {
+  flex-direction: row-reverse;
+}
+
+/* BANNER SECTION STYLES */
+.banner {
+  background-color: #ec008c;
+  padding-top: 192px;
+  padding-bottom: 192px;
+}
+
+.banner__wrapper {
+  max-width: 1280px;
+  margin: 0 auto;
+}
+
+.banner-text {
+  font-size: 36px;
+  font-weight: 400;
+  line-height: 56px;
+  text-align: center;
+}
+
+.text__black {
+  color: black;
+}
+
+/* CONTACT US SECTION STYLES */
+.contact {
+  background-color: #000000;
+}
+
+/* FOOTER SECTION STYLES */
+.footer {
+  background-color: #f5f5f5;
+  height: 125px;
+}
+
+.footer__wrapper {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding: 50px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footer__copy {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 20px;
+  color: #5a5d67;
+  text-align: center;
+}
+
+.footer__social {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+
+/* Arrow Animation */
+.arrow {
+  font-size: 40px;
+  animation: upDown 1s ease-in-out infinite;
+}
+
+/* Yukarı aşağı animasyonu tanımlıyoruz */
+@keyframes upDown {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }

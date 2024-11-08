@@ -10,197 +10,199 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="https://use.typekit.net/mcr2zgd.css" />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="main.css" />
+    <script src="https://cdn.tailwindcss.com"></script>
     <title>Fikir Medya</title>
   </head>
   <body>
     <!-- Splash Screen -->
-    <div class="splash-screen" id="splashScreen">
-      <img class="splash-screen__background" src="./assets/star-vector.png" />
+    <!-- <div class="splash bg-[url('/assets/star-vector.png')] bg-center bg-cover" id="splashScreen">
+      <p class="text-description text-center max-w-[800px] mb-12" id="typewriterText"></p>
+      <p class="text-description text-center font-abril max-w-[800px] mb-24" id="typewriterTextSecond"></p>
+      <img class="h-40 z-10 arrow" src="./assets/line.svg" />
+    </div> -->
 
-      <div class="splash-screen__wrapper">
-        <div class="splash-screen__text">
-          Dijital bir dünyada kültürün artan hızı, estetiği, markaları ve deneyimleri tekdüzeliğe <br />
-          sürüklemeye devam ediyor. Tüm markalar bu tekdüzeliğin olduğu okyanusu aynı yerden; <br />
-          pahalı bir "aynılık adası" üzerinden izliyorlar. Bu durumda farklılaşma arayışında olanlar için yaratıcılık
-          <br />
-          -sadece- bir değerden öte gereklilik haline geldi.
-        </div>
-        <div class="splash-screen__extra">
-          Markalarımızı vasatlıktan kurtarmak için onları bu aynılık adasından çıkaracak <br />
-          cesur fikri arıyoruz.
-        </div>
-      </div>
-      <div class="splash-screen__line">
-        <img src="./assets/line.png" />
-      </div>
-    </div>
+    <!-- Menu Screen -->
+    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
+      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+        <li><a href="./index.html">Anasayfa</a></li>
+        <li><a href="./about-us.html">Biz Kimiz?</a></li>
+        <li><a href="./services.html">Hizmetlerimiz</a></li>
+        <li><a href="./doping.html">Doping</a></li>
+        <li><a href="./works.html">İşlerimiz</a></li>
+        <li><a href="./references.html">Kimlerle Çalıştık</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./hr.html">IK</a></li>
+        <li><a href="./contact.html">İletişim</a></li>
+      </ul>
+    </nav>
 
-    <!-- Main Page Start Here -->
-    <div class="container">
-      <header class="header">
-        <img class="header__banner" src="./assets/homepage-banner.png" />
-        <!-- Circular Effect Text -->
-        <div class="circular__wrapper">
-          <img class="circular__text" src="./assets/circular-text.svg" />
-          <!-- <img class="circular__line" src="./assets/magenta-line.svg" /> -->
-        </div>
-      </header>
-      <main class="main">
-        <!-- Doping Start Here -->
-        <section class="doping__wrapper">
-          <div class="doping__image">
-            <img class="doping__image--svg" src="./assets/doping.svg" />
+    <header class="relative w-full h-screen bg-[url('/assets/background.png')] bg-center bg-cover">
+      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
+        <img class="w-32 circular" src="./assets/menu-logo.svg" />
+        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-black.svg" id="menuIcon" />
+      </div>
+      <div class="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2">
+        <img class="circular" src="./assets/circular-text.svg" />
+      </div>
+    </header>
+    <main class="flex flex-col gap-y-20">
+      <section class="container my-20">
+        <div class="flex flex-col">
+          <div class="flex flex-row mb-8">
+            <img src="./assets/doping.svg" />
             <img src="./assets/asteriks-sm.svg" />
           </div>
-          <div class="doping__desc">
-            <div class="doping__title">
-              <h3 class="doping__title--text">
-                Deneyim Odaklı <br />
-                Pazarlama
-              </h3>
-              <img />
+          <div class="flex flex-row justify-between gap-x-24">
+            <div class="flex flex-col w-1/4">
+              <h5 class="mb-8 text-3xl font-abril text-magenta">Deneyim Odaklı Pazarlama</h5>
+              <img src="./assets/h-line-magenta.svg" />
             </div>
-            <div class="doping__text">
-              <p class="doping__text--first">
-                Sıkıcı bir dijital deneyimin gerçek maliyeti, geleneksel reklamcılığa kıyasla daha incelikli ve
-                karmaşıktır ve doğal olarak hesaplanması daha zordur. Bunun bir nedeni, modern marka deneyimlerinin,
-                sosyal medyadan web ve uygulamalara, oradan da deneyimsel etkileşimlere kadar uzanan çok kanallı
-                yapısıdır.
+            <div class="flex flex-col w-3/4">
+              <p class="text-description mb-8">
+                Sıkıcı bir dijital deneyimin gerçek maliyeti, geleneksel reklamcılığa kıyasla daha incelikli ve karmaşıktır ve doğal olarak hesaplanması daha zordur. Bunun bir
+                nedeni, modern marka deneyimlerinin, sosyal medyadan web ve uygulamalara, oradan da deneyimsel etkileşimlere kadar uzanan çok kanallı yapısıdır.
               </p>
-              <p class="doping__text--second">
-                Deneyim Odaklı Pazarlama ile çalıştığımız ve çalışacağımız markalara doping yapıyoruz.
-              </p>
-              <div class="doping__link--wrapper">
-                <a class="doping__link" href="#">Daha fazla oku</a>
+              <p class="text-description mb-8">Deneyim Odaklı Pazarlama ile çalıştığımız ve çalışacağımız markalara doping yapıyoruz.</p>
+              <div class="flex flex-row items-center gap-x-2">
+                <a class="text-xl text-magenta">Daha Fazla Oku</a>
                 <img src="./assets/arrow-link.svg" />
               </div>
             </div>
-          </div>
-        </section>
-        <!-- Doping End Here -->
-
-        <!-- Our Works Start Here -->
-        <section class="works">
-          <h2 class="works__title">İŞLERİMİZ</h2>
-          <div class="work">
-            <div>
-              <img class="work__image" src="./assets/work-1.jpg" />
-            </div>
-            <div class="work__info">
-              <h3 class="work__info--title">Rasyonel ve İşlevsel</h3>
-              <p class="work__info--brand">TransAnatolia</p>
-              <p class="work__info--desc">
-                Türkiye'nin ilk ve tek rally raid'i TransAnatolia iletişimindeki 5 yıllık yolculuğumuzu ve bu yolculukta
-                yarattığımız değerlerle, birçok marka için TransAnatolia'nın nasıl çok kıymetli bir asset haline
-                geldiğini anlattık.
-              </p>
-              <div class="doping__link--wrapper">
-                <a class="doping__link" href="#">Videoyu izle</a>
-                <img src="./assets/arrow-link.svg" />
-              </div>
-            </div>
-          </div>
-          <div class="work reverse">
-            <div>
-              <img class="work__image" src="./assets/work-2.jpg" />
-            </div>
-            <div class="work__info">
-              <h3 class="work__info--title">Farklı ve Cesur</h3>
-              <p class="work__info--brand">Snowboard vs Bitci Racing</p>
-              <p class="work__info--desc">
-                “Olmaz” denilen her şeyi hayata geçirmeyi seviyoruz. Yarış takımımız ile yaptığımız farklı ve cesur
-                projede birlikte çalıştığımız sevgili Furkan Kızılay’a teşekkürlerimizle.
-              </p>
-              <div class="doping__link--wrapper">
-                <a class="doping__link" href="#">Videoyu izle</a>
-                <img src="./assets/arrow-link.svg" />
-              </div>
-            </div>
-          </div>
-          <div class="work">
-            <div>
-              <img class="work__image" src="./assets/work-3.jpg" />
-            </div>
-            <div class="work__info">
-              <h3 class="work__info--title">Fikir ne?</h3>
-              <p class="work__info--brand">Anıl Sam Sergisi</p>
-              <p class="work__info--desc">
-                Sanatçılarla çalışmayı ve sanatı çalışma hayatımıza entegre etmeyi seviyoruz. Sevgili Anıl Sam’a ve
-                yaratıcılıklarıyla dünyayı güzeleştiren tüm sanatçılara teşekkürlerimizle…
-              </p>
-              <div class="doping__link--wrapper">
-                <a class="doping__link" href="#">Videoyu izle</a>
-                <img src="./assets/arrow-link.svg" />
-              </div>
-            </div>
-          </div>
-          <div class="work reverse">
-            <div>
-              <img class="work__image" src="./assets/work-4.jpg" />
-            </div>
-            <div class="work__info">
-              <h3 class="work__info--title">Rasyonel ve İşlevsel</h3>
-              <p class="work__info--brand">Vosmer Çikolata Festivali / 2024</p>
-              <p class="work__info--desc">
-                Bir çocuk festivaliyle bir otomotiv markası nasıl bir araya gelir? "Lorem ipsum dolor sit amet,
-                consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                ad minim veniam,
-              </p>
-              <div class="doping__link--wrapper">
-                <a class="doping__link" href="#">Videoyu izle</a>
-                <img src="./assets/arrow-link.svg" />
-              </div>
-            </div>
-          </div>
-          <h2 class="works__title">DAHA FAZLA GÖR</h2>
-        </section>
-        <!-- Our Works End Here -->
-
-        <!-- Mainpage Banner End Here -->
-        <section class="banner">
-          <div class="banner__wrapper">
-            <p class="banner__text">
-              <span class="text__black">
-                Markalarımızı bulunduğu yerden ileriye götürmek, dönüştürmek ve <br />
-                yenilemek için çalışıyoruz. Biz aslında tutkumuzu paylaşıyoruz.
-              </span>
-              <br />
-              İçine yeni bir fikir koyamayacağımız, aynılık adasında olmayı tercih eden<br />
-              herhangi bir markayla çalışmıyoruz.
-            </p>
-          </div>
-        </section>
-        <!-- Mainpage Banner End Here -->
-
-        <!-- Contact Us Start Here -->
-        <section class="contact">
-          <div class="contact__wrapper">
-            <h3>Bizimle İletişime Geçin</h3>
-          </div>
-        </section>
-        <!-- Contact Us End Here -->
-      </main>
-      <!-- Main Page End Here -->
-
-      <!-- Footer Start Here -->
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__logo">
-            <img src="./assets/footer-logo.svg" />
-          </div>
-          <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-          <div class="footer__social">
-            <img src="./assets/facebook.svg" />
-            <img src="./assets/youtube.svg" />
-            <img src="./assets/instagram.svg" />
-            <img src="./assets/linkedin.svg" />
           </div>
         </div>
-      </footer>
-      <!-- Footer End Here -->
-    </div>
-
+      </section>
+      <section class="container-xl flex flex-col gap-y-20">
+        <h5 class="text-center text-description">İŞLERİMİZ</h5>
+        <div class="flex flex-row justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-1.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Rasyonel ve İşlevsel</h5>
+            <p class="text-3xl mb-8">Trans Anatolia</p>
+            <p class="text-description mb-8">
+              Türkiye'nin ilk ve tek rally raid'i TransAnatolia iletişimindeki 5 yıllık yolculuğumuzu ve bu yolculukta yarattığımız değerlerle, birçok marka için TransAnatolia'nın
+              nasıl çok kıymetli bir asset haline geldiğini anlattık.
+            </p>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Videoyu izle</a>
+              <img src="./assets/arrow-link.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row-reverse justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-2.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Farklı ve Cesur</h5>
+            <p class="text-3xl mb-8">Snowboard vs Bitci Racing</p>
+            <p class="text-description mb-8">
+              “Olmaz” denilen her şeyi hayata geçirmeyi seviyoruz. Yarış takımımız ile yaptığımız farklı ve cesur projede birlikte çalıştığımız sevgili Furkan Kızılay’a
+              teşekkürlerimizle.
+            </p>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Videoyu izle</a>
+              <img src="./assets/arrow-link.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-3.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Fikir Ne?</h5>
+            <p class="text-3xl mb-8">Anıl Sam Sergisi</p>
+            <p class="text-description mb-8">
+              Sanatçılarla çalışmayı ve sanatı çalışma hayatımıza entegre etmeyi seviyoruz. Sevgili Anıl Sam’a ve yaratıcılıklarıyla dünyayı güzeleştiren tüm sanatçılara
+              teşekkürlerimizle…
+            </p>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Videoyu izle</a>
+              <img src="./assets/arrow-link.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row-reverse justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-4.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Rasyonel ve İşlevsel</h5>
+            <p class="text-3xl mb-8">Vosmer Çikolata Festivali / 2024</p>
+            <p class="text-description mb-8">
+              Bir çocuk festivaliyle bir otomotiv markası nasıl bir araya gelir? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
+              labore et dolore magna aliqua. Ut enim ad minim veniam
+            </p>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Videoyu izle</a>
+              <img src="./assets/arrow-link.svg" />
+            </div>
+          </div>
+        </div>
+        <h5 class="text-center text-description">DAHA FAZLA GÖR</h5>
+        <img class="h-40 z-10 arrow" src="./assets/line.svg" />
+      </section>
+      <section class="bg-magenta flex relative -mt-32">
+        <div class="container my-40">
+          <p class="font-abril text-black banner-text">
+            Markalarımızı bulunduğu yerden ileriye götürmek, dönüştürmek ve yenilemek için çalışıyoruz. Biz aslında tutkumuzu paylaşıyoruz.
+          </p>
+          <p class="font-abril text-white banner-text">İçine yeni bir fikir koyamayacağımız, aynılık adasında olmayı tercih eden herhangi bir markayla çalışmıyoruz.</p>
+        </div>
+        <img class="absolute top-0 right-20" src="./assets/asteriks-black.svg" />
+      </section>
+      <section class="container mx-auto">
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
+          <div class="form-wrapper font-acumin">
+            <form action="" class="form" id="contact-form">
+              <div class="form-group">
+                <label class="form-label" for="first">Adınız ve Soyadınız</label>
+                <input id="first" class="form-input" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="last">E-posta Adresiniz</label>
+                <input id="last" class="form-input" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="color">Telefon Numaranız</label>
+                <input id="color" class="form-input" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="color">Firma / Kuruluş İsminiz</label>
+                <input id="color" class="form-input" type="text" />
+              </div>
+              <div class="form-group">
+                <label class="form-label" for="color">Notunuz</label>
+                <input id="color" class="form-input" type="text" />
+              </div>
+            </form>
+            <button class="text-white font-acumin mt-10 mb-12 text-description px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
+            <div class="flex flex-row justify-between items-center w-full text-description text-white">
+              <div class="flex flex-row items-center gap-x-3">
+                <img src="./assets/whatsapp.svg" />
+                <p class="text-lg">Şimdi Mail Atın</p>
+                <a class="text-sm" href="mailto:info@fikirmedya.com.tr">info@fikirmedya.com.tr</a>
+              </div>
+              <div class="flex flex-row items-center gap-x-3">
+                <img src="./assets/phone.svg" />
+                <p class="text-lg">Şimdi Arayın</p>
+                <a class="text-sm" href="tel:5321117999">0532 111 79 99</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="./assets/footer-logo.svg" />
+        </div>
+        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="footer__social">
+          <img src="./assets/facebook.svg" />
+          <img src="./assets/youtube.svg" />
+          <img src="./assets/instagram.svg" />
+          <img src="./assets/linkedin.svg" />
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

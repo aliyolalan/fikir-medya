@@ -1,0 +1,17 @@
+// Tam sayfa menü
+const menuIcon = document.getElementById("menuIcon");
+const fullPageMenu = document.getElementById("fullPageMenu");
+const menuLinks = document.querySelectorAll(".full-page-menu a");
+console.log(menuLinks);
+
+// Menü simgesine tıklandığında tam sayfa menüyü göster/gizle
+menuIcon.addEventListener("click", () => {
+  fullPageMenu.classList.toggle("active");
+
+  // Menü aktifse sayfa kaydırmayı kapat, değilse aç
+  if (fullPageMenu.classList.contains("active")) {
+    document.body.style.overflow = "hidden";
+  } else {
+    document.body.style.overflow = "";
+  }
+});
