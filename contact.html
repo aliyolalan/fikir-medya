@@ -15,14 +15,26 @@
     <title>İletişim</title>
   </head>
   <body>
-    <header class="h-5/6 bg-magenta flex flex-col relative pb-20">
-      <nav class="flex w-full mx-auto flex-row items-center justify-between px-20 py-4">
-        <div class="flex flex-row gap-x-10 items-center">
-          <img class="circular-text" src="./assets/menu-circular.svg" />
-          <p class="font-abril text-black text-breadcrumb"><span class="text-white">Anasayfa / </span>Hizmetlerimiz</p>
-        </div>
-        <div>MENU</div>
-      </nav>
+    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
+      <img src="./assets/menu-asteriks.svg" />
+      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+        <li><a href="./index.html">Anasayfa</a></li>
+        <li><a href="./about-us.html">Biz Kimiz?</a></li>
+        <li><a href="./services.html">Hizmetlerimiz</a></li>
+        <li><a href="./doping.html">Doping</a></li>
+        <li><a href="./works.html">İşlerimiz</a></li>
+        <li><a href="./references.html">Kimlerle Çalıştık</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./hr.html">IK</a></li>
+        <li><a href="./contact.html">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <header class="relative flex w-full h-[70vh] bg-magenta">
+      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
+        <img class="w-32 circular" src="./assets/menu-circular.svg" />
+        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+      </div>
       <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star.png" />
       <div class="container justify-center mx-auto flex flex-col mt-20 text-description">
         <p>Adalet Mahallesi 1600 Sokak No: 3A Bayraklı İzmir</p>
@@ -45,8 +57,8 @@
       </div>
     </header>
     <main>
-      <section>
-        <div class="container mx-auto mt-20 flex flex-col items-center justify-center">
+      <section class="container mx-auto mt-16">
+        <div class="flex flex-col items-center justify-center">
           <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
           <div class="form-wrapper font-acumin">
             <form action="" class="form" id="contact-form">

@@ -7,7 +7,7 @@ document.addEventListener("DOMContentLoaded", () => {
   const splashScreen = document.getElementById("splashScreen");
 
   // Splash ekranı açıkken kaydırmayı devre dışı bırak
-  document.body.style.overflow = "hidden";
+  // document.body.style.overflow = "hidden";
 
   let index = 0;
   const typingSpeed = 5; // Her harfin yazılma süresi (ms)
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", () => {
         splashScreen.classList.add("hiddenSplash");
 
         // Splash ekran kaybolduktan sonra kaydırmayı etkinleştir
-        document.body.style.overflow = "auto";
+        // document.body.style.overflow = "auto";
       }, 500); // Yazı yazıldıktan 1 saniye sonra splash ekranını kaydırma
     }
   }
@@ -45,9 +45,9 @@ menuIcon.addEventListener("click", () => {
 
   // Menü aktifse sayfa kaydırmayı kapat, değilse aç
   if (fullPageMenu.classList.contains("active")) {
-    document.body.style.overflow = "hidden";
+    // document.body.style.overflow = "hidden";
   } else {
-    document.body.style.overflow = "";
+    // document.body.style.overflow = "";
   }
 });
 

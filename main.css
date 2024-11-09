@@ -348,7 +348,7 @@ body {
   background-color: white; /* Siyah yarı saydam arka plan */
   color: white;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
   justify-content: center;
   transform: translateY(-100%); /* Menü başlangıçta görünmez */

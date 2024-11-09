@@ -15,16 +15,30 @@
     <title>Blog</title>
   </head>
   <body>
-    <header class="h-5/6 flex flex-col relative pb-20">
-      <nav class="flex w-full mx-auto flex-row items-center justify-between px-20 py-4">
-        <div class="flex flex-row gap-x-10 items-center">
-          <img class="circular-text" src="./assets/menu-circular-magenta.svg" />
-          <p class="font-abril text-magenta text-breadcrumb"><span class="text-white">Anasayfa / </span>İşlerimiz</p>
-        </div>
-        <div>MENU</div>
-      </nav>
+    <!-- Menu Screen -->
+    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
+      <img src="./assets/menu-asteriks.svg" />
+      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+        <li><a href="./index.html">Anasayfa</a></li>
+        <li><a href="./about-us.html">Biz Kimiz?</a></li>
+        <li><a href="./services.html">Hizmetlerimiz</a></li>
+        <li><a href="./doping.html">Doping</a></li>
+        <li><a href="./works.html">İşlerimiz</a></li>
+        <li><a href="./references.html">Kimlerle Çalıştık</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./hr.html">IK</a></li>
+        <li><a href="./contact.html">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <header class="relative flex w-full h-[20vh] bg-black">
+      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
+        <img class="w-32 circular" src="./assets/menu-circular-magenta.svg" />
+        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+      </div>
       <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star-magenta.svg" />
     </header>
+
     <main>
       <section class="container mx-auto text-left">
         <div class="text-description">
@@ -224,6 +238,7 @@
         </div>
       </section>
     </main>
+
     <footer class="footer">
       <div class="footer__wrapper">
         <div class="footer__logo">

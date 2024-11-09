@@ -15,32 +15,50 @@
     <title>Hizmetlerimiz</title>
   </head>
   <body>
-    <header class="h-5/6 flex flex-col relative pb-20">
-      <nav class="flex w-full mx-auto flex-row items-center justify-between px-20 py-4">
-        <div class="flex flex-row gap-x-10 items-center">
-          <img class="circular-text" src="./assets/menu-circular-magenta.svg" />
-          <p class="font-abril text-magenta text-breadcrumb"><span class="text-white">Anasayfa / </span>Hizmetlerimiz</p>
-        </div>
-        <div>MENU</div>
-      </nav>
+    <!-- Menu Screen -->
+    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
+      <img src="./assets/menu-asteriks.svg" />
+      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+        <li><a href="./index.html">Anasayfa</a></li>
+        <li><a href="./about-us.html">Biz Kimiz?</a></li>
+        <li><a href="./services.html">Hizmetlerimiz</a></li>
+        <li><a href="./doping.html">Doping</a></li>
+        <li><a href="./works.html">İşlerimiz</a></li>
+        <li><a href="./references.html">Kimlerle Çalıştık</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./hr.html">IK</a></li>
+        <li><a href="./contact.html">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <header class="relative flex w-full h-[70vh] bg-black">
+      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
+        <img class="w-32 circular" src="./assets/menu-circular-magenta.svg" />
+        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+      </div>
       <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star-magenta.svg" />
-      <div class="container justify-center mx-auto flex flex-col mt-20">
-        <h2 class="text-6xl font-abril text-white">Ne Sunuyoruz</h2>
-        <div class="flex flex-row items-start gap-x-12 mt-10">
-          <img class="mt-4" src="./assets/h-line.svg" />
-          <div>
-            <p class="text-white text-description">
-              Genç ve yeniyi takip eden, meraklı bir ekiple; bizimle yola çıkan tüm markalar ve paydaşlarımız<br />
-              için büyüyen ve etkileşimi artıran fikirler üretiyoruz. Yapay zeka araçlarını kullanarak yeni<br />
-              stratejiler geliştiriyor, kreatif süreçlerde daha dinamik ve çarpıcı işler üretiyoruz.
+      <div class="container flex flex-col justify-center items-start mt-16">
+        <div class="flex flex-row mb-8">
+          <h5 class="page-title font-abril">Ne Sunuyoruz</h5>
+        </div>
+        <div class="flex flex-row justify-between gap-x-24">
+          <div class="flex flex-col w-1/4">
+            <img class="mt-3" src="./assets/h-line.svg" />
+          </div>
+          <div class="flex flex-col w-3/4">
+            <p class="text-description mb-8">
+              Genç ve yeniyi takip eden, meraklı bir ekiple; bizimle yola çıkan tüm markalar ve paydaşlarımız için büyüyen ve etkileşimi artıran fikirler üretiyoruz. Yapay zeka
+              araçlarını kullanarak yeni stratejiler geliştiriyor, kreatif süreçlerde daha dinamik ve çarpıcı işler üretiyoruz.
             </p>
           </div>
         </div>
       </div>
     </header>
+
     <main>
       <section class="bg-magenta relative">
-        <div class="container mx-auto py-20">
+        <img class="absolute bottom-0 right-0 w-4/12 transform-img" src="./assets/right-top-star.png" />
+        <div class="container py-20">
           <h2 class="font-abril text-black pb-10 text-6xl">Hizmetlerimiz</h2>
           <p class="text-description">
             Yapay zeka destekli pazarlama stratejileri geliştirmek ve hayata geçirmek<br />
@@ -56,8 +74,8 @@
             Web sitesi tasarımı ve yazılımı<br />
           </p>
         </div>
-        <img class="absolute bottom-0 right-0 w-4/12 transform-img" src="./assets/right-top-star.png" />
       </section>
+
       <section>
         <div class="container mx-auto mt-20 flex flex-col items-center justify-center">
           <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
@@ -100,21 +118,22 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__logo">
-            <img src="./assets/footer-logo.svg" />
-          </div>
-          <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-          <div class="footer__social">
-            <img src="./assets/facebook.svg" />
-            <img src="./assets/youtube.svg" />
-            <img src="./assets/instagram.svg" />
-            <img src="./assets/linkedin.svg" />
-          </div>
-        </div>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="./assets/footer-logo.svg" />
+        </div>
+        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="footer__social">
+          <img src="./assets/facebook.svg" />
+          <img src="./assets/youtube.svg" />
+          <img src="./assets/instagram.svg" />
+          <img src="./assets/linkedin.svg" />
+        </div>
+      </div>
+    </footer>
     <script src="script.js"></script>
   </body>
 </html>

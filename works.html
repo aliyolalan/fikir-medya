@@ -15,92 +15,140 @@
     <title>İşlerimiz</title>
   </head>
   <body>
-    <header class="h-5/6 flex flex-col relative pb-20">
-      <nav class="flex w-full mx-auto flex-row items-center justify-between px-20 py-4">
-        <div class="flex flex-row gap-x-10 items-center">
-          <img class="circular-text" src="./assets/menu-circular-magenta.svg" />
-          <p class="font-abril text-magenta text-breadcrumb"><span class="text-white">Anasayfa / </span>İşlerimiz</p>
-        </div>
-        <div>MENU</div>
-      </nav>
+    <!-- Menu Screen -->
+    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
+      <img src="./assets/menu-asteriks.svg" />
+      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+        <li><a href="./index.html">Anasayfa</a></li>
+        <li><a href="./about-us.html">Biz Kimiz?</a></li>
+        <li><a href="./services.html">Hizmetlerimiz</a></li>
+        <li><a href="./doping.html">Doping</a></li>
+        <li><a href="./works.html">İşlerimiz</a></li>
+        <li><a href="./references.html">Kimlerle Çalıştık</a></li>
+        <li><a href="./blog.html">Blog</a></li>
+        <li><a href="./hr.html">IK</a></li>
+        <li><a href="./contact.html">İletişim</a></li>
+      </ul>
+    </nav>
+
+    <header class="relative flex w-full h-[40vh] bg-black">
+      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
+        <img class="w-32 circular" src="./assets/menu-circular-magenta.svg" />
+        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+      </div>
       <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star-magenta.svg" />
     </header>
+
     <main>
-      <!-- Our Works Start Here -->
-      <section class="works">
-        <div class="work">
-          <div>
-            <img class="work__image" src="./assets/work-1.jpg" />
-          </div>
-          <div class="work__info">
-            <h3 class="work__info--title">Rasyonel ve İşlevsel</h3>
-            <p class="work__info--brand">TransAnatolia</p>
-            <p class="work__info--desc">
+      <section class="container-xl flex flex-col gap-y-20">
+        <div class="flex flex-row justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-1.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Rasyonel ve İşlevsel</h5>
+            <p class="text-3xl mb-8">Trans Anatolia</p>
+            <p class="text-description mb-8">
               Türkiye'nin ilk ve tek rally raid'i TransAnatolia iletişimindeki 5 yıllık yolculuğumuzu ve bu yolculukta yarattığımız değerlerle, birçok marka için TransAnatolia'nın
               nasıl çok kıymetli bir asset haline geldiğini anlattık.
             </p>
-            <div class="doping__link--wrapper">
-              <a class="doping__link" href="#">Videoyu izle</a>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Daha Fazla Detay</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="work reverse">
-          <div>
-            <img class="work__image" src="./assets/work-2.jpg" />
-          </div>
-          <div class="work__info">
-            <h3 class="work__info--title">Farklı ve Cesur</h3>
-            <p class="work__info--brand">Snowboard vs Bitci Racing</p>
-            <p class="work__info--desc">
+        <div class="flex flex-row-reverse justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-2.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Farklı ve Cesur</h5>
+            <p class="text-3xl mb-8">Snowboard vs Bitci Racing</p>
+            <p class="text-description mb-8">
               “Olmaz” denilen her şeyi hayata geçirmeyi seviyoruz. Yarış takımımız ile yaptığımız farklı ve cesur projede birlikte çalıştığımız sevgili Furkan Kızılay’a
               teşekkürlerimizle.
             </p>
-            <div class="doping__link--wrapper">
-              <a class="doping__link" href="#">Videoyu izle</a>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Daha Fazla Detay</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="work">
-          <div>
-            <img class="work__image" src="./assets/work-3.jpg" />
-          </div>
-          <div class="work__info">
-            <h3 class="work__info--title">Fikir ne?</h3>
-            <p class="work__info--brand">Anıl Sam Sergisi</p>
-            <p class="work__info--desc">
+        <div class="flex flex-row justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-3.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Fikir Ne?</h5>
+            <p class="text-3xl mb-8">Anıl Sam Sergisi</p>
+            <p class="text-description mb-8">
               Sanatçılarla çalışmayı ve sanatı çalışma hayatımıza entegre etmeyi seviyoruz. Sevgili Anıl Sam’a ve yaratıcılıklarıyla dünyayı güzeleştiren tüm sanatçılara
               teşekkürlerimizle…
             </p>
-            <div class="doping__link--wrapper">
-              <a class="doping__link" href="#">Videoyu izle</a>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Daha Fazla Detay</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="work reverse">
-          <div>
-            <img class="work__image" src="./assets/work-4.jpg" />
-          </div>
-          <div class="work__info">
-            <h3 class="work__info--title">Rasyonel ve İşlevsel</h3>
-            <p class="work__info--brand">Vosmer Çikolata Festivali / 2024</p>
-            <p class="work__info--desc">
+        <div class="flex flex-row-reverse justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-4.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Rasyonel ve İşlevsel</h5>
+            <p class="text-3xl mb-8">Vosmer Çikolata Festivali / 2024</p>
+            <p class="text-description mb-8">
               Bir çocuk festivaliyle bir otomotiv markası nasıl bir araya gelir? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam,
+              labore et dolore magna aliqua. Ut enim ad minim veniam
             </p>
-            <div class="doping__link--wrapper">
-              <a class="doping__link" href="#">Videoyu izle</a>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Daha Fazla Detay</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <h2 class="works__title">DAHA FAZLA GÖR</h2>
+        <div class="flex flex-row justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-5.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Fikir Ne?</h5>
+            <p class="text-3xl mb-8">İzeltaş 19 Mayıs İletişimi</p>
+            <p class="text-description mb-8">
+              Atatürk değerlerine kökten bağlı İzeltaş için resmi bayramlarda ses getiren işler yapmak, oldukça önemli. 19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramımız da bu
+              günlerden biri. Son zamanlarda gençler yurt dışına yerleşmek istiyor, bu da büyük bir beyin göçüne sebebiyet veriyordu....
+            </p>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+              <img src="./assets/arrow-link.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row-reverse justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-6.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Kendiliğinden Doğan Hikayeler</h5>
+            <p class="text-3xl mb-8">İzeltaş “Ailenizden Biri” Film Serisi</p>
+            <p class="text-description mb-8">
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  
+            </p>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+              <img src="./assets/arrow-link.svg" />
+            </div>
+          </div>
+        </div>
+        <div class="flex flex-row justify-between items-center gap-x-24">
+          <img class="rounded-3xl max-w-[900px]" src="./assets/work-7.jpg" />
+          <div class="flex flex-col">
+            <h5 class="article-title font-abril text-magenta mb-4">Hikayenin Peşinde</h5>
+            <p class="text-3xl mb-8">Continental / Yolun Ötesinde</p>
+            <p class="text-description mb-8">
+              "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
+              exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
+            </p>
+            <div class="flex flex-row items-center gap-x-2">
+              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+              <img src="./assets/arrow-link.svg" />
+            </div>
+          </div>
+        </div>
+        <h5 class="text-center text-description">DAHA FAZLA GÖR</h5>
       </section>
-      <!-- Our Works End Here -->
-      <section>
-        <div class="container mx-auto my-20 flex flex-col items-center justify-center">
+      <section class="container mx-auto mt-16">
+        <div class="flex flex-col items-center justify-center">
           <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
           <div class="form-wrapper font-acumin">
             <form action="" class="form" id="contact-form">
@@ -141,20 +189,22 @@
           </div>
         </div>
       </section>
-      <footer class="footer">
-        <div class="footer__wrapper">
-          <div class="footer__logo">
-            <img src="./assets/footer-logo.svg" />
-          </div>
-          <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-          <div class="footer__social">
-            <img src="./assets/facebook.svg" />
-            <img src="./assets/youtube.svg" />
-            <img src="./assets/instagram.svg" />
-            <img src="./assets/linkedin.svg" />
-          </div>
-        </div>
-      </footer>
     </main>
+
+    <footer class="footer">
+      <div class="footer__wrapper">
+        <div class="footer__logo">
+          <img src="./assets/footer-logo.svg" />
+        </div>
+        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="footer__social">
+          <img src="./assets/facebook.svg" />
+          <img src="./assets/youtube.svg" />
+          <img src="./assets/instagram.svg" />
+          <img src="./assets/linkedin.svg" />
+        </div>
+      </div>
+    </footer>
+    <script src="script.js"></script>
   </body>
 </html>
