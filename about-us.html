@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/asteriks-sm.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -12,13 +13,16 @@
     <link rel="stylesheet" href="https://use.typekit.net/mcr2zgd.css" />
     <link rel="stylesheet" href="main.css" />
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Hakkımızda</title>
+    <title>Biz Kimiz</title>
   </head>
   <body>
     <!-- Menu Screen -->
-    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
-      <img src="./assets/menu-asteriks.svg" />
-      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+    <nav
+      class="full-page-menu justify-end sm:justify-between bg-[url('/assets/menu-mobile-background.png')] sm:bg-[url('/assets/menu-background.png')] bg-center bg-cover z-20"
+      id="fullPageMenu"
+    >
+      <img class="hidden sm:block" src="./assets/menu-asteriks.svg" />
+      <ul class="flex flex-col gap-y-8 sm:gap-y-10 mr-8 sm:mr-48 font-abril text-right text-2xl sm:text-3xl">
         <li><a href="./index.html">Anasayfa</a></li>
         <li><a href="./about-us.html">Biz Kimiz?</a></li>
         <li><a href="./services.html">Hizmetlerimiz</a></li>
@@ -31,22 +35,22 @@
       </ul>
     </nav>
 
-    <header class="relative flex w-full h-screen bg-magenta">
-      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
-        <img class="w-32 circular" src="./assets/menu-circular.svg" />
-        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+    <header class="relative flex w-full sm:h-screen bg-magenta">
+      <div class="flex flex-row justify-between items-center w-full px-4 py-4 sm:px-12 sm:py-6 absolute top-0 left-0">
+        <img class="w-28 sm:w-32 -mt-7 -ml-7 sm:m-0 circular" src="./assets/menu-circular.svg" />
+        <img class="cursor-pointer pr-4 sm:pr-12 z-30" src="./assets/menu-icon-white.svg" id="menuIcon" />
       </div>
-      <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star.png" />
-      <img class="absolute bottom-0 left-0 w-4/12 rotate-180" src="./assets/right-top-star.png" />
-      <div class="container flex flex-col justify-center items-start">
-        <div class="flex flex-row mb-8">
-          <h5 class="page-title font-abril">
+      <img class="absolute top-0 right-0 w-4/12 hidden sm:block" src="./assets/right-top-star.png" />
+      <img class="absolute bottom-0 left-0 w-4/12 rotate-180 hidden sm:block" src="./assets/right-top-star.png" />
+      <div class="container flex flex-col sm:justify-center items-start mt-44 sm:mt-0 px-6 sm:px-0">
+        <div class="w-full flex flex-row justify-between items-end mb-8">
+          <h5 class="text-4xl sm:text-6xl font-abril">
             Tutkumuz,<br />
             fikirlerimiz...
           </h5>
         </div>
         <div class="flex flex-row justify-between gap-x-24">
-          <div class="flex flex-col w-1/4">
+          <div class="flex flex-col w-1/4 hidden sm:block">
             <img class="mt-3" src="./assets/h-line.svg" />
           </div>
           <div class="flex flex-col w-3/4">
@@ -63,9 +67,9 @@
       </div>
     </header>
 
-    <main class="flex flex-col gap-y-20">
-      <section class="container my-20">
-        <div class="flex flex-row justify-center gap-x-20 text-white">
+    <main class="flex flex-col gap-y-20 px-6 sm:px-0">
+      <section class="container flex flex-row justify-between sm:justify-center items-center mt-8 sm:my-20">
+        <div class="flex flex-col gap-y-10 sm:flex-row justify-center sm:gap-x-20 text-white">
           <div>
             <p class="text-description">Biz az sayıda ama toplamda</p>
             <img class="my-5" src="./assets/300.svg" />
@@ -77,62 +81,64 @@
             <p class="text-description text-magenta">ödüllü tecrübeli bir ekibiz.</p>
           </div>
         </div>
+        <img class="sm:hidden -mr-6 w-44" src="./assets/about-us-star.svg" />
       </section>
-
-      <section class="container mb-20">
-        <div class="flex flex-row justify-between">
-          <div class="flex flex-col basis-1/4 justify-between">
-            <div class="flex flex-col text-white">
+      <section class="container">
+        <div class="flex flex-col sm:flex-row justify-between">
+          <div class="flex flex-col basis-1/4 justify-between order-3 sm:order-1">
+            <div class="flex flex-col text-white order-3">
               <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
                 <p class="text-magenta text-8xl">6</p>
                 <p>Medya Planlama Departmanı</p>
               </div>
-              <p class="pt-2 ml-20 text-xl">Medya Planlama Uzmanı</p>
+              <p class="pt-2 ml-20 text-base sm:text-xl">Medya Planlama Uzmanı</p>
             </div>
-            <div class="flex flex-col text-white">
+            <div class="flex flex-col text-white order-2">
               <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
                 <p class="text-magenta text-8xl">5</p>
                 <p>Teknoloji Departmanı</p>
               </div>
-              <p class="pt-2 ml-20 text-xl">Teknoloji Direktörü<br />Front End<br />Back End<br />Mobil</p>
+              <p class="pt-2 ml-20 text-base sm:text-xl">Teknoloji Direktörü<br />Front End<br />Back End<br />Mobil</p>
             </div>
-            <div class="flex flex-col text-white">
+            <div class="flex flex-col text-white order-1">
               <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
                 <p class="text-magenta text-8xl">4</p>
-                <p>Etkinlik<br />ve Operasyon Departmanı</p>
+                <p>Etkinlik ve Operasyon Departmanı</p>
               </div>
-              <p class="pt-2 ml-20 text-xl">Marka Yöneticisi<br />Marka Yöneticisi</p>
+              <p class="pt-2 ml-20 text-base sm:text-xl">Marka Yöneticisi<br />Marka Yöneticisi</p>
             </div>
           </div>
-          <img class="w-7/12 basis-2/4" src="./assets/about-us.png" />
-          <div class="flex flex-col basis-1/4 justify-between">
+          <img class="sm:w-7/12 basis-2/4 order-1 sm:order-2" src="./assets/about-us.png" />
+          <div class="flex flex-col basis-1/4 justify-between order-2 sm:order-3">
             <div class="flex flex-col text-white">
               <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
                 <p class="text-magenta text-8xl">1</p>
                 <p>Kreatif Departmanı</p>
               </div>
-              <p class="pt-2 ml-16 text-xl">Kreatif Direktör Reklam Yazarı Sanat Yönetmeni Sanat Yönetmeni Jr. Reklam Yazarı Jr. Sanat Yönetmeni</p>
+              <p class="pt-2 ml-16 text-base sm:text-xl">
+                Kreatif Direktör<br />Reklam Yazarı<br />Sanat Yönetmeni<br />Sanat Yönetmeni<br />Jr. Reklam Yazarı<br />Jr. Sanat Yönetmeni
+              </p>
             </div>
             <div class="flex flex-col text-white">
               <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
                 <p class="text-magenta text-8xl">2</p>
                 <p class="">Strateji Departmanı</p>
               </div>
-              <p class="pt-2 ml-20 text-xl">Strateji Direktörü<br />Stratejist</p>
+              <p class="pt-2 ml-20 text-base sm:text-xl">Strateji Direktörü<br />Stratejist</p>
             </div>
             <div class="flex flex-col text-white">
               <div class="flex flex-row items-end gap-x-6 font-abril text-xl border-b-2 pb-2">
                 <p class="text-magenta text-8xl">3</p>
                 <p class="">Prodüksiyon Departmanı</p>
               </div>
-              <p class="pt-2 ml-20 text-xl">Prodüksiyon Direktörü<br />Kurgu Yönetmeni<br />Görüntü Yönetmeni</p>
+              <p class="pt-2 ml-20 text-base sm:text-xl">Prodüksiyon Direktörü<br />Kurgu Yönetmeni<br />Görüntü Yönetmeni</p>
             </div>
           </div>
         </div>
       </section>
-      <section class="container">
-        <div class="flex flex-col justify-center items-center">
-          <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
+      <section class="container mx-auto">
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="text-white w-full text-center text-xl font-abril">Bizimle İletişime Geçin</h3>
           <div class="form-wrapper font-acumin">
             <form action="" class="form" id="contact-form">
               <div class="form-group">
@@ -156,8 +162,8 @@
                 <input id="color" class="form-input" type="text" />
               </div>
             </form>
-            <button class="text-white font-acumin mt-10 mb-12 text-description px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
-            <div class="flex flex-row justify-between items-center w-full text-description text-white">
+            <button class="text-white font-acumin my-12 text-description sm:py-0 py-2 px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
+            <div class="flex flex-col md:flex-row gap-y-6 justify-between items-center w-full text-description text-white">
               <div class="flex flex-row items-center gap-x-3">
                 <img src="./assets/whatsapp.svg" />
                 <p class="text-lg">Şimdi Mail Atın</p>
@@ -173,18 +179,15 @@
         </div>
       </section>
     </main>
-
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__logo">
-          <img src="./assets/footer-logo.svg" />
-        </div>
-        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-        <div class="footer__social">
-          <img src="./assets/facebook.svg" />
-          <img src="./assets/youtube.svg" />
-          <img src="./assets/instagram.svg" />
-          <img src="./assets/linkedin.svg" />
+    <footer class="bg-white">
+      <div class="container mx-auto flex flex-col gap-y-12 md:flex-row justify-between items-center md:px-0 px-6 py-12">
+        <img src="./assets/footer-logo.svg" />
+        <p class="text-black text-center order-first md:order-none">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="flex flex-row gap-x-4">
+          <a href="#"><img src="./assets/facebook.svg" /></a>
+          <a href="#"><img src="./assets/youtube.svg" /></a>
+          <a href="#"><img src="./assets/instagram.svg" /></a>
+          <a href="#"><img src="./assets/linkedin.svg" /></a>
         </div>
       </div>
     </footer>

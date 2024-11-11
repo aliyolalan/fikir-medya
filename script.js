@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // document.body.style.overflow = "hidden";
 
   let index = 0;
-  const typingSpeed = 5; // Her harfin yazılma süresi (ms)
+  const typingSpeed = 10; // Her harfin yazılma süresi (ms)
 
   function typeWriter() {
     if (index < text.length || index < textSecond.length) {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Splash ekran kaybolduktan sonra kaydırmayı etkinleştir
         // document.body.style.overflow = "auto";
-      }, 500); // Yazı yazıldıktan 1 saniye sonra splash ekranını kaydırma
+      }, 1000); // Yazı yazıldıktan 1 saniye sonra splash ekranını kaydırma
     }
   }
 
@@ -45,9 +45,9 @@ menuIcon.addEventListener("click", () => {
 
   // Menü aktifse sayfa kaydırmayı kapat, değilse aç
   if (fullPageMenu.classList.contains("active")) {
-    // document.body.style.overflow = "hidden";
+    document.body.style.overflow = "hidden";
   } else {
-    // document.body.style.overflow = "";
+    document.body.style.overflow = "";
   }
 });
 

@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/asteriks-sm.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,9 +17,12 @@
   </head>
   <body>
     <!-- Menu Screen -->
-    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
-      <img src="./assets/menu-asteriks.svg" />
-      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+    <nav
+      class="full-page-menu justify-end sm:justify-between bg-[url('/assets/menu-mobile-background.png')] sm:bg-[url('/assets/menu-background.png')] bg-center bg-cover z-20"
+      id="fullPageMenu"
+    >
+      <img class="hidden sm:block" src="./assets/menu-asteriks.svg" />
+      <ul class="flex flex-col gap-y-8 sm:gap-y-10 mr-8 sm:mr-48 font-abril text-right text-2xl sm:text-3xl">
         <li><a href="./index.html">Anasayfa</a></li>
         <li><a href="./about-us.html">Biz Kimiz?</a></li>
         <li><a href="./services.html">Hizmetlerimiz</a></li>
@@ -31,114 +35,112 @@
       </ul>
     </nav>
 
-    <header class="relative flex h-[20vh] w-full bg-black">
-      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
-        <img class="w-32 circular" src="./assets/menu-circular-magenta.svg" />
-        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+    <header class="relative flex w-full h-[15vh] sm:h-[20vh] bg-black">
+      <div class="flex flex-row justify-between items-center w-full px-4 py-4 sm:px-12 sm:py-6 absolute top-0 left-0">
+        <img class="w-28 sm:w-32 -mt-7 -ml-7 sm:m-0 circular" src="./assets/menu-circular-magenta.svg" />
+        <img class="cursor-pointer pr-4 sm:pr-12 z-30" src="./assets/menu-icon-white.svg" id="menuIcon" />
       </div>
     </header>
 
-    <main class="relative">
-      <img class="absolute bottom-0 right-36" src="./assets/asteriks-references.svg" />
-      <section class="container mx-auto pb-60 flex flex-row flex-wrap gap-2 justify-center">
-        <div class="w-44 h-44 flex">
+    <main class="relative px-6 sm:px-0">
+      <img class="absolute bottom-0 right-36 hidden sm:block" src="./assets/asteriks-references.svg" />
+      <section class="container mx-auto sm:pb-60 flex flex-row gap-2 flex-wrap justify-center">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-32" src="./assets/brand-logos/porsche.svg" />
         </div>
-        <div class="w-44 h-44 flex flex-row">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-24" src="./assets/brand-logos/audi.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-16" src="./assets/brand-logos/volkswagen.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-14" src="./assets/brand-logos/lukoil.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-36" src="./assets/brand-logos/castrol.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-28" src="./assets/brand-logos/transanatolia.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-20" src="./assets/brand-logos/mitsubishi.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-14" src="./assets/brand-logos/fiat.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-24" src="./assets/brand-logos/red-bull.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-20" src="./assets/brand-logos/cupra.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-24" src="./assets/brand-logos/zorlu.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-12" src="./assets/brand-logos/ksk.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-16" src="./assets/brand-logos/aztek.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-24" src="./assets/brand-logos/osram.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-20" src="./assets/brand-logos/jbl.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-36" src="./assets/brand-logos/harman-kardon.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-28" src="./assets/brand-logos/marshall.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-28" src="./assets/brand-logos/thule.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-24" src="./assets/brand-logos/vosmer.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-16" src="./assets/brand-logos/dalan.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-32" src="./assets/brand-logos/izeltas.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-24" src="./assets/brand-logos/texaco.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-20" src="./assets/brand-logos/puma.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-16" src="./assets/brand-logos/tuck.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-24" src="./assets/brand-logos/turkiye.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-32" src="./assets/brand-logos/continental.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-24" src="./assets/brand-logos/general-tire.svg" />
         </div>
-        <div class="w-44 h-44 flex">
+        <div class="w-40 h-40 flex">
           <img class="mx-auto w-36" src="./assets/brand-logos/uniroyal.svg" />
         </div>
       </section>
     </main>
 
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__logo">
-          <img src="./assets/footer-logo.svg" />
-        </div>
-        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-        <div class="footer__social">
-          <img src="./assets/facebook.svg" />
-          <img src="./assets/youtube.svg" />
-          <img src="./assets/instagram.svg" />
-          <img src="./assets/linkedin.svg" />
+    <footer class="bg-white">
+      <div class="container mx-auto flex flex-col gap-y-12 md:flex-row justify-between items-center md:px-0 px-6 py-12">
+        <img src="./assets/footer-logo.svg" />
+        <p class="text-black text-center order-first md:order-none">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="flex flex-row gap-x-4">
+          <a href="#"><img src="./assets/facebook.svg" /></a>
+          <a href="#"><img src="./assets/youtube.svg" /></a>
+          <a href="#"><img src="./assets/instagram.svg" /></a>
+          <a href="#"><img src="./assets/linkedin.svg" /></a>
         </div>
       </div>
     </footer>

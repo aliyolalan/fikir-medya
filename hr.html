@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/asteriks-sm.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,9 +16,12 @@
     <title>İnsan Kaynakları</title>
   </head>
   <body>
-    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
-      <img src="./assets/menu-asteriks.svg" />
-      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+    <nav
+      class="full-page-menu justify-end sm:justify-between bg-[url('/assets/menu-mobile-background.png')] sm:bg-[url('/assets/menu-background.png')] bg-center bg-cover z-20"
+      id="fullPageMenu"
+    >
+      <img class="hidden sm:block" src="./assets/menu-asteriks.svg" />
+      <ul class="flex flex-col gap-y-8 sm:gap-y-10 mr-8 sm:mr-48 font-abril text-right text-2xl sm:text-3xl">
         <li><a href="./index.html">Anasayfa</a></li>
         <li><a href="./about-us.html">Biz Kimiz?</a></li>
         <li><a href="./services.html">Hizmetlerimiz</a></li>
@@ -31,18 +35,18 @@
     </nav>
 
     <header class="relative flex w-full h-screen bg-magenta">
-      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
-        <img class="w-32 circular" src="./assets/menu-circular.svg" />
-        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+      <div class="flex flex-row justify-between items-center w-full px-4 py-4 sm:px-12 sm:py-6 absolute top-0 left-0">
+        <img class="w-28 sm:w-32 -mt-7 -ml-7 sm:m-0 circular" src="./assets/menu-circular.svg" />
+        <img class="cursor-pointer pr-4 sm:pr-12 z-30" src="./assets/menu-icon-white.svg" id="menuIcon" />
       </div>
-      <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star.png" />
-      <img class="absolute bottom-0 left-0 w-4/12 rotate-180" src="./assets/right-top-star.png" />
-      <div class="container flex flex-col justify-center items-start">
-        <div class="flex flex-row mb-8">
-          <h5 class="page-title font-abril">Her zaman<br />yetenek arıyoruz</h5>
+      <img class="absolute top-0 right-0 w-4/12 hidden sm:block" src="./assets/right-top-star.png" />
+      <img class="absolute bottom-0 left-0 w-4/12 rotate-180 hidden sm:block" src="./assets/right-top-star.png" />
+      <div class="container flex flex-col sm:justify-center items-start mt-44 sm:mt-0 px-6 sm:px-0">
+        <div class="w-full flex flex-row justify-between items-end mb-8">
+          <h5 class="text-4xl sm:text-6xl font-abril">Her zaman yetenek arıyoruz</h5>
         </div>
         <div class="flex flex-row justify-between gap-x-24">
-          <div class="flex flex-col w-1/4">
+          <div class="flex flex-col w-1/4 hidden sm:block">
             <img class="mt-3" src="./assets/h-line.svg" />
           </div>
           <div class="flex flex-col w-3/4">
@@ -50,20 +54,20 @@
               Açık pozisyonlar aşağıda listelenmiştir. İş başvurusunda bulunurken lütfen info@fikirmedya.com.tr adresine bir CV ve portföy gönderin. E-postanızın konu satırına iş
               başlığını ekleyin.
             </p>
-            <div class="grid grid-rows-2 grid-cols-2 text-white font-abril mt-8">
-              <p class="job-text">Snr Art Director</p>
-              <p class="job-text">Snr Reklam Yazarı</p>
-              <p class="job-text">Jnr Art Director</p>
-              <p class="job-text">Jnr Account Director</p>
+            <div class="grid sm:grid-rows-2 sm:grid-cols-2 gap-2 sm:gap-4 sm:w-2/3 text-white font-abril mt-8">
+              <p class="text-base sm:text-2xl">Snr Art Director</p>
+              <p class="text-base sm:text-2xl">Snr Reklam Yazarı</p>
+              <p class="text-base sm:text-2xl">Jnr Art Director</p>
+              <p class="text-base sm:text-2xl">Jnr Account Director</p>
             </div>
           </div>
         </div>
       </div>
     </header>
-    <main>
-      <section class="container mx-auto mt-16">
-        <div class="flex flex-col items-center justify-center">
-          <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
+    <main class="flex flex-col px-6 sm:px-0">
+      <section class="container mx-auto">
+        <div class="flex flex-col items-center justify-center mt-12">
+          <h3 class="text-white w-full text-center text-xl font-abril">Bizimle İletişime Geçin</h3>
           <div class="form-wrapper font-acumin">
             <form action="" class="form" id="contact-form">
               <div class="form-group">
@@ -87,8 +91,8 @@
                 <input id="color" class="form-input" type="text" />
               </div>
             </form>
-            <button class="text-white font-acumin mt-10 mb-12 text-description px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
-            <div class="flex flex-row justify-between items-center w-full text-description text-white">
+            <button class="text-white font-acumin my-12 text-description sm:py-0 py-2 px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
+            <div class="flex flex-col md:flex-row gap-y-6 justify-between items-center w-full text-description text-white">
               <div class="flex flex-row items-center gap-x-3">
                 <img src="./assets/whatsapp.svg" />
                 <p class="text-lg">Şimdi Mail Atın</p>
@@ -104,21 +108,18 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__logo">
-          <img src="./assets/footer-logo.svg" />
-        </div>
-        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-        <div class="footer__social">
-          <img src="./assets/facebook.svg" />
-          <img src="./assets/youtube.svg" />
-          <img src="./assets/instagram.svg" />
-          <img src="./assets/linkedin.svg" />
+    <footer class="bg-white">
+      <div class="container mx-auto flex flex-col gap-y-12 md:flex-row justify-between items-center md:px-0 px-6 py-12">
+        <img src="./assets/footer-logo.svg" />
+        <p class="text-black text-center order-first md:order-none">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="flex flex-row gap-x-4">
+          <a href="#"><img src="./assets/facebook.svg" /></a>
+          <a href="#"><img src="./assets/youtube.svg" /></a>
+          <a href="#"><img src="./assets/instagram.svg" /></a>
+          <a href="#"><img src="./assets/linkedin.svg" /></a>
         </div>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>

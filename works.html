@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/asteriks-sm.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,9 +17,12 @@
   </head>
   <body>
     <!-- Menu Screen -->
-    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
-      <img src="./assets/menu-asteriks.svg" />
-      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+    <nav
+      class="full-page-menu justify-end sm:justify-between bg-[url('/assets/menu-mobile-background.png')] sm:bg-[url('/assets/menu-background.png')] bg-center bg-cover z-20"
+      id="fullPageMenu"
+    >
+      <img class="hidden sm:block" src="./assets/menu-asteriks.svg" />
+      <ul class="flex flex-col gap-y-8 sm:gap-y-10 mr-8 sm:mr-48 font-abril text-right text-2xl sm:text-3xl">
         <li><a href="./index.html">Anasayfa</a></li>
         <li><a href="./about-us.html">Biz Kimiz?</a></li>
         <li><a href="./services.html">Hizmetlerimiz</a></li>
@@ -31,125 +35,128 @@
       </ul>
     </nav>
 
-    <header class="relative flex w-full h-[40vh] bg-black">
-      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
-        <img class="w-32 circular" src="./assets/menu-circular-magenta.svg" />
-        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+    <header class="relative flex w-full h-[20vh] sm:h-[40vh] bg-black">
+      <div class="flex flex-row justify-between items-center w-full px-4 py-4 sm:px-12 sm:py-6 absolute top-0 left-0">
+        <img class="w-28 sm:w-32 -mt-7 -ml-7 sm:m-0 circular" src="./assets/menu-circular-magenta.svg" />
+        <img class="cursor-pointer pr-4 sm:pr-12 z-30" src="./assets/menu-icon-white.svg" id="menuIcon" />
       </div>
-      <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star-magenta.svg" />
+      <img class="absolute top-0 right-0 w-4/12 hidden sm:block" src="./assets/right-top-star-magenta.svg" />
     </header>
-
-    <main>
-      <section class="container-xl flex flex-col gap-y-20">
-        <div class="flex flex-row justify-between items-center gap-x-24">
-          <img class="rounded-3xl max-w-[900px]" src="./assets/work-1.jpg" />
+    <main class="flex flex-col gap-y-12 sm:gap-y-24 px-6 sm:px-0">
+      <section class="container-xl flex flex-col gap-y-8 sm:gap-y-20">
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-x-24 border-b sm:border-none">
+          <img class="rounded sm:rounded-3xl mb-4 sm:mb-0" src="./assets/work-1.jpg" />
           <div class="flex flex-col">
-            <h5 class="article-title font-abril text-magenta mb-4">Rasyonel ve İşlevsel</h5>
-            <p class="text-3xl mb-8">Trans Anatolia</p>
-            <p class="text-description mb-8">
+            <h5 class="article-title font-abril text-magenta mb-2 sm:mb-4">Rasyonel ve İşlevsel</h5>
+            <p class="text-lg sm:text-3xl mb-4 sm:mb-8">TransAnatolia</p>
+            <p class="text-description mb-4 sm:mb-8">
               Türkiye'nin ilk ve tek rally raid'i TransAnatolia iletişimindeki 5 yıllık yolculuğumuzu ve bu yolculukta yarattığımız değerlerle, birçok marka için TransAnatolia'nın
               nasıl çok kıymetli bir asset haline geldiğini anlattık.
             </p>
-            <div class="flex flex-row items-center gap-x-2">
-              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+            <div class="flex flex-row items-center justify-end sm:justify-start gap-x-2 mb-4 sm:mb-0">
+              <a class="text-base sm:text-xl text-magenta">Videoyu izle</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="flex flex-row-reverse justify-between items-center gap-x-24">
-          <img class="rounded-3xl max-w-[900px]" src="./assets/work-2.jpg" />
+        <div class="flex flex-col sm:flex-row-reverse justify-between items-start sm:items-center gap-x-24 border-b sm:border-none">
+          <img class="rounded sm:rounded-3xl mb-4 sm:mb-0" src="./assets/work-2.jpg" />
           <div class="flex flex-col">
-            <h5 class="article-title font-abril text-magenta mb-4">Farklı ve Cesur</h5>
-            <p class="text-3xl mb-8">Snowboard vs Bitci Racing</p>
-            <p class="text-description mb-8">
+            <h5 class="article-title font-abril text-magenta mb-2 sm:mb-4">Farklı ve Cesur</h5>
+            <p class="text-lg sm:text-3xl mb-4 sm:mb-8">Snowboard vs Bitci Racing</p>
+            <p class="text-description mb-4 sm:mb-8">
               “Olmaz” denilen her şeyi hayata geçirmeyi seviyoruz. Yarış takımımız ile yaptığımız farklı ve cesur projede birlikte çalıştığımız sevgili Furkan Kızılay’a
               teşekkürlerimizle.
             </p>
-            <div class="flex flex-row items-center gap-x-2">
-              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+            <div class="flex flex-row items-center justify-end sm:justify-start gap-x-2 mb-4 sm:mb-0">
+              <a class="text-base sm:text-xl text-magenta">Videoyu izle</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="flex flex-row justify-between items-center gap-x-24">
-          <img class="rounded-3xl max-w-[900px]" src="./assets/work-3.jpg" />
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-x-24 border-b sm:border-none">
+          <img class="rounded sm:rounded-3xl mb-4 sm:mb-0" src="./assets/work-3.jpg" />
           <div class="flex flex-col">
-            <h5 class="article-title font-abril text-magenta mb-4">Fikir Ne?</h5>
-            <p class="text-3xl mb-8">Anıl Sam Sergisi</p>
-            <p class="text-description mb-8">
+            <h5 class="article-title font-abril text-magenta mb-2 sm:mb-4">Fikir Ne?</h5>
+            <p class="text-lg sm:text-3xl mb-4 sm:mb-8">Anıl Sam Sergisi</p>
+            <p class="text-description mb-4 sm:mb-8">
               Sanatçılarla çalışmayı ve sanatı çalışma hayatımıza entegre etmeyi seviyoruz. Sevgili Anıl Sam’a ve yaratıcılıklarıyla dünyayı güzeleştiren tüm sanatçılara
               teşekkürlerimizle…
             </p>
-            <div class="flex flex-row items-center gap-x-2">
-              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+            <div class="flex flex-row items-center justify-end sm:justify-start gap-x-2 mb-4 sm:mb-0">
+              <a class="text-base sm:text-xl text-magenta">Videoyu izle</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="flex flex-row-reverse justify-between items-center gap-x-24">
-          <img class="rounded-3xl max-w-[900px]" src="./assets/work-4.jpg" />
+        <div class="flex flex-col sm:flex-row-reverse justify-between items-start sm:items-center gap-x-24 border-b sm:border-none">
+          <img class="rounded sm:rounded-3xl mb-4 sm:mb-0" src="./assets/work-4.jpg" />
           <div class="flex flex-col">
-            <h5 class="article-title font-abril text-magenta mb-4">Rasyonel ve İşlevsel</h5>
-            <p class="text-3xl mb-8">Vosmer Çikolata Festivali / 2024</p>
-            <p class="text-description mb-8">
+            <h5 class="article-title font-abril text-magenta mb-2 sm:mb-4">Rasyonel ve İşlevsel</h5>
+            <p class="text-lg sm:text-3xl mb-4 sm:mb-8">Vosmer Çikolata Festivali / 2024</p>
+            <p class="text-description mb-4 sm:mb-8">
               Bir çocuk festivaliyle bir otomotiv markası nasıl bir araya gelir? "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut
-              labore et dolore magna aliqua. Ut enim ad minim veniam
+              labore et dolore magna aliqua. Ut enim ad minim veniam.
             </p>
-            <div class="flex flex-row items-center gap-x-2">
-              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+            <div class="flex flex-row items-center justify-end sm:justify-start gap-x-2 mb-4 sm:mb-0">
+              <a class="text-base sm:text-xl text-magenta">Videoyu izle</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="flex flex-row justify-between items-center gap-x-24">
-          <img class="rounded-3xl max-w-[900px]" src="./assets/work-5.jpg" />
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-x-24 border-b sm:border-none">
+          <img class="rounded sm:rounded-3xl mb-4 sm:mb-0" src="./assets/work-5.jpg" />
           <div class="flex flex-col">
-            <h5 class="article-title font-abril text-magenta mb-4">Fikir Ne?</h5>
-            <p class="text-3xl mb-8">İzeltaş 19 Mayıs İletişimi</p>
-            <p class="text-description mb-8">
+            <h5 class="article-title font-abril text-magenta mb-2 sm:mb-4">Fikir Ne?</h5>
+            <p class="text-lg sm:text-3xl mb-4 sm:mb-8">İzeltaş 19 Mayıs İletişimi</p>
+            <p class="text-description mb-4 sm:mb-8">
               Atatürk değerlerine kökten bağlı İzeltaş için resmi bayramlarda ses getiren işler yapmak, oldukça önemli. 19 Mayıs Atatürk’ü Anma, Gençlik ve Spor Bayramımız da bu
               günlerden biri. Son zamanlarda gençler yurt dışına yerleşmek istiyor, bu da büyük bir beyin göçüne sebebiyet veriyordu....
             </p>
-            <div class="flex flex-row items-center gap-x-2">
-              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+            <div class="flex flex-row items-center justify-end sm:justify-start gap-x-2 mb-4 sm:mb-0">
+              <a class="text-base sm:text-xl text-magenta">Videoyu izle</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="flex flex-row-reverse justify-between items-center gap-x-24">
-          <img class="rounded-3xl max-w-[900px]" src="./assets/work-6.jpg" />
+        <div class="flex flex-col sm:flex-row-reverse justify-between items-start sm:items-center gap-x-24 border-b sm:border-none">
+          <img class="rounded sm:rounded-3xl mb-4 sm:mb-0" src="./assets/work-6.jpg" />
           <div class="flex flex-col">
-            <h5 class="article-title font-abril text-magenta mb-4">Kendiliğinden Doğan Hikayeler</h5>
-            <p class="text-3xl mb-8">İzeltaş “Ailenizden Biri” Film Serisi</p>
-            <p class="text-description mb-8">
+            <h5 class="article-title font-abril text-magenta mb-2 sm:mb-4">Kendiliğinden Doğan Hikayeler</h5>
+            <p class="text-lg sm:text-3xl mb-4 sm:mb-8">İzeltaş “Ailenizden Biri” Film Serisi</p>
+            <p class="text-description mb-4 sm:mb-8">
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,  
             </p>
-            <div class="flex flex-row items-center gap-x-2">
-              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+            <div class="flex flex-row items-center justify-end sm:justify-start gap-x-2 mb-4 sm:mb-0">
+              <a class="text-base sm:text-xl text-magenta">Videoyu izle</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <div class="flex flex-row justify-between items-center gap-x-24">
-          <img class="rounded-3xl max-w-[900px]" src="./assets/work-7.jpg" />
+        <div class="flex flex-col sm:flex-row justify-between items-start sm:items-center gap-x-24 border-b sm:border-none">
+          <img class="rounded sm:rounded-3xl mb-4 sm:mb-0" src="./assets/work-7.jpg" />
           <div class="flex flex-col">
-            <h5 class="article-title font-abril text-magenta mb-4">Hikayenin Peşinde</h5>
-            <p class="text-3xl mb-8">Continental / Yolun Ötesinde</p>
-            <p class="text-description mb-8">
+            <h5 class="article-title font-abril text-magenta mb-2 sm:mb-4">Hikayenin Peşinde</h5>
+            <p class="text-lg sm:text-3xl mb-4 sm:mb-8">Continental / Yolun Ötesinde</p>
+            <p class="text-description mb-4 sm:mb-8">
               "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud
               exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. 
             </p>
-            <div class="flex flex-row items-center gap-x-2">
-              <a class="text-xl text-magenta">Daha Fazla Detay</a>
+            <div class="flex flex-row items-center justify-end sm:justify-start gap-x-2 mb-4 sm:mb-0">
+              <a class="text-base sm:text-xl text-magenta">Videoyu izle</a>
               <img src="./assets/arrow-link.svg" />
             </div>
           </div>
         </div>
-        <h5 class="text-center text-description">DAHA FAZLA GÖR</h5>
+        <h5 class="text-center text-description hidden sm:block">DAHA FAZLA GÖR</h5>
+        <a href="#" class="flex flex-row gap-x-8 block sm:hidden justify-center items-center self-center border rounded-full px-20 py-2 mt-8">
+          <span>Daha Fazla Göster</span>
+          <img src="./assets/arrow-link.svg" />
+        </a>
       </section>
-      <section class="container mx-auto mt-16">
+      <section class="container mx-auto">
         <div class="flex flex-col items-center justify-center">
-          <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
+          <h3 class="text-white w-full text-center text-xl font-abril">Bizimle İletişime Geçin</h3>
           <div class="form-wrapper font-acumin">
             <form action="" class="form" id="contact-form">
               <div class="form-group">
@@ -173,8 +180,8 @@
                 <input id="color" class="form-input" type="text" />
               </div>
             </form>
-            <button class="text-white font-acumin mt-10 mb-12 text-description px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
-            <div class="flex flex-row justify-between items-center w-full text-description text-white">
+            <button class="text-white font-acumin my-12 text-description sm:py-0 py-2 px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
+            <div class="flex flex-col md:flex-row gap-y-6 justify-between items-center w-full text-description text-white">
               <div class="flex flex-row items-center gap-x-3">
                 <img src="./assets/whatsapp.svg" />
                 <p class="text-lg">Şimdi Mail Atın</p>
@@ -190,18 +197,15 @@
         </div>
       </section>
     </main>
-
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__logo">
-          <img src="./assets/footer-logo.svg" />
-        </div>
-        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-        <div class="footer__social">
-          <img src="./assets/facebook.svg" />
-          <img src="./assets/youtube.svg" />
-          <img src="./assets/instagram.svg" />
-          <img src="./assets/linkedin.svg" />
+    <footer class="bg-white">
+      <div class="container mx-auto flex flex-col gap-y-12 md:flex-row justify-between items-center md:px-0 px-6 py-12">
+        <img src="./assets/footer-logo.svg" />
+        <p class="text-black text-center order-first md:order-none">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="flex flex-row gap-x-4">
+          <a href="#"><img src="./assets/facebook.svg" /></a>
+          <a href="#"><img src="./assets/youtube.svg" /></a>
+          <a href="#"><img src="./assets/instagram.svg" /></a>
+          <a href="#"><img src="./assets/linkedin.svg" /></a>
         </div>
       </div>
     </footer>

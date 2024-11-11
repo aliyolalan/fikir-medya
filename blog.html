@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/x-icon" href="./assets/asteriks-sm.svg" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -16,9 +17,12 @@
   </head>
   <body>
     <!-- Menu Screen -->
-    <nav class="full-page-menu bg-[url('/assets/menu-background.png')] bg-center bg-cover" id="fullPageMenu">
-      <img src="./assets/menu-asteriks.svg" />
-      <ul class="container flex flex-col gap-y-10 font-abril text-right text-3xl">
+    <nav
+      class="full-page-menu justify-end sm:justify-between bg-[url('/assets/menu-mobile-background.png')] sm:bg-[url('/assets/menu-background.png')] bg-center bg-cover z-20"
+      id="fullPageMenu"
+    >
+      <img class="hidden sm:block" src="./assets/menu-asteriks.svg" />
+      <ul class="flex flex-col gap-y-8 sm:gap-y-10 mr-8 sm:mr-48 font-abril text-right text-2xl sm:text-3xl">
         <li><a href="./index.html">Anasayfa</a></li>
         <li><a href="./about-us.html">Biz Kimiz?</a></li>
         <li><a href="./services.html">Hizmetlerimiz</a></li>
@@ -32,15 +36,15 @@
     </nav>
 
     <header class="relative flex w-full h-[20vh] bg-black">
-      <div class="flex flex-row justify-between items-center w-full px-12 py-6 absolute top-0 left-0">
-        <img class="w-32 circular" src="./assets/menu-circular-magenta.svg" />
-        <img class="cursor-pointer pr-12 z-10" src="./assets/menu-icon-white.svg" id="menuIcon" />
+      <div class="flex flex-row justify-between items-center w-full px-4 py-4 sm:px-12 sm:py-6 absolute top-0 left-0">
+        <img class="w-28 sm:w-32 -mt-7 -ml-7 sm:m-0 circular" src="./assets/menu-circular-magenta.svg" />
+        <img class="cursor-pointer pr-4 sm:pr-12 z-30" src="./assets/menu-icon-white.svg" id="menuIcon" />
       </div>
-      <img class="absolute top-0 right-0 w-4/12" src="./assets/right-top-star-magenta.svg" />
+      <img class="absolute top-0 right-0 w-4/12 hidden sm:block" src="./assets/right-top-star-magenta.svg" />
     </header>
 
-    <main>
-      <section class="container mx-auto text-left">
+    <main class="flex flex-col gap-y-12 sm:gap-y-24 px-6 sm:px-0">
+      <section class="container mx-auto text-left hidden sm:block">
         <div class="text-description">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut<br />
           labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco<br />
@@ -48,156 +52,160 @@
           voluptate velit esse cillum dolore eu fugiat nulla pariatur.
         </div>
       </section>
-      <section>
-        <div class="container mx-auto flex flex-row justify-between mt-40">
-          <div class="w-[500px]" id="leftSide">
-            <div class="mb-40" id="singleArticle">
+      <section class="flex flex-col gap-y-8 sm:gap-y-20">
+        <div class="container mx-auto flex flex-col sm:flex-row justify-between sm:mt-32">
+          <div class="flex flex-col gap-y-12 sm:gap-y-20 max-w-[500px]" id="leftSide">
+            <div class="flex flex-col gap-y-3 sm:gap-y-4" id="singleArticle">
               <div class="relative">
-                <img class="rounded-2xl" src="https://placehold.co/500x668" />
-                <p class="absolute top-0 right-0 mr-6 mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Teknoloji</p>
+                <img class="rounded sm:rounded-2xl" src="https://placehold.co/500x668" />
+                <p class="absolute top-0 right-0 mr-4 mt-4 sm:mr-6 sm:mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Teknoloji</p>
               </div>
-              <div class="flex flex-row justify-between mt-4">
+              <div class="flex flex-row justify-between">
                 <p class="text-description font-acumin">20.09.24</p>
                 <p class="text-description font-acumin">8 dk Okuma Süresi</p>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="text-title font-abril text-magenta">Lorem İpsum Dor Samet</h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-2xl sm:text-4xl font-abril text-magenta">Lorem İpsum Dor Samet</h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="blog-title font-acumin">Sed ut perspiciatis unde omnis </h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-lg sm:text-3xl font-acumin">Sed ut perspiciatis unde omnis </h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
+              <div class="flex flex-row justify-start">
                 <p class="text-description font-acumin">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
               </div>
-              <div class="doping__link--wrapper mt-4">
-                <a class="doping__link" href="#">Daha Fazla Detay</a>
+              <div class="flex flex-row items-center gap-x-2">
+                <a class="text-description text-magenta" href="#">Daha Fazla Detay</a>
                 <img src="./assets/arrow-link.svg" />
               </div>
             </div>
-            <div class="mb-40" id="singleArticle">
+            <div class="flex flex-col gap-y-3 sm:gap-y-4" id="singleArticle">
               <div class="relative">
-                <img class="rounded-2xl" src="https://placehold.co/500x668" />
-                <p class="absolute top-0 right-0 mr-6 mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Yapay Zeka</p>
+                <img class="rounded sm:rounded-2xl" src="https://placehold.co/500x668" />
+                <p class="absolute top-0 right-0 mr-4 mt-4 sm:mr-6 sm:mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Teknoloji</p>
               </div>
-              <div class="flex flex-row justify-between mt-4">
+              <div class="flex flex-row justify-between">
                 <p class="text-description font-acumin">20.09.24</p>
                 <p class="text-description font-acumin">8 dk Okuma Süresi</p>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="text-title font-abril text-magenta">Lorem İpsum Dor Samet</h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-2xl sm:text-4xl font-abril text-magenta">Lorem İpsum Dor Samet</h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="blog-title font-acumin">Sed ut perspiciatis unde omnis </h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-lg sm:text-3xl font-acumin">Sed ut perspiciatis unde omnis </h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
+              <div class="flex flex-row justify-start">
                 <p class="text-description font-acumin">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
               </div>
-              <div class="doping__link--wrapper mt-4">
-                <a class="doping__link" href="#">Daha Fazla Detay</a>
+              <div class="flex flex-row items-center gap-x-2">
+                <a class="text-description text-magenta" href="#">Daha Fazla Detay</a>
                 <img src="./assets/arrow-link.svg" />
               </div>
             </div>
-            <div class="mb-40" id="singleArticle">
+            <div class="flex flex-col gap-y-3 sm:gap-y-4" id="singleArticle">
               <div class="relative">
-                <img class="rounded-2xl" src="https://placehold.co/500x668" />
-                <p class="absolute top-0 right-0 mr-6 mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Yapay Zeka</p>
+                <img class="rounded sm:rounded-2xl" src="https://placehold.co/500x668" />
+                <p class="absolute top-0 right-0 mr-4 mt-4 sm:mr-6 sm:mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Teknoloji</p>
               </div>
-              <div class="flex flex-row justify-between mt-4">
+              <div class="flex flex-row justify-between">
                 <p class="text-description font-acumin">20.09.24</p>
                 <p class="text-description font-acumin">8 dk Okuma Süresi</p>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="text-title font-abril text-magenta">Lorem İpsum Dor Samet</h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-2xl sm:text-4xl font-abril text-magenta">Lorem İpsum Dor Samet</h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="blog-title font-acumin">Sed ut perspiciatis unde omnis </h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-lg sm:text-3xl font-acumin">Sed ut perspiciatis unde omnis </h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
+              <div class="flex flex-row justify-start">
                 <p class="text-description font-acumin">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
               </div>
-              <div class="doping__link--wrapper mt-4">
-                <a class="doping__link" href="#">Daha Fazla Detay</a>
+              <div class="flex flex-row items-center gap-x-2">
+                <a class="text-description text-magenta" href="#">Daha Fazla Detay</a>
                 <img src="./assets/arrow-link.svg" />
               </div>
             </div>
           </div>
-          <div class="w-[500px]" id="rightSide">
-            <div class="mt-40" id="singleArticle">
+          <div class="flex flex-col gap-y-12 sm:gap-y-20 max-w-[500px] mt-12 sm:mt-40" id="rightSide">
+            <div class="flex flex-col gap-y-3 sm:gap-y-4" id="singleArticle">
               <div class="relative">
-                <img class="rounded-2xl" src="https://placehold.co/500x668" />
-                <p class="absolute top-0 right-0 mr-6 mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">İlham Veren</p>
+                <img class="rounded sm:rounded-2xl" src="https://placehold.co/500x668" />
+                <p class="absolute top-0 right-0 mr-4 mt-4 sm:mr-6 sm:mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Teknoloji</p>
               </div>
-              <div class="flex flex-row justify-between mt-4">
+              <div class="flex flex-row justify-between">
                 <p class="text-description font-acumin">20.09.24</p>
                 <p class="text-description font-acumin">8 dk Okuma Süresi</p>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="text-title font-abril text-magenta">Lorem İpsum Dor Samet</h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-2xl sm:text-4xl font-abril text-magenta">Lorem İpsum Dor Samet</h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="blog-title font-acumin">Sed ut perspiciatis unde omnis </h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-lg sm:text-3xl font-acumin">Sed ut perspiciatis unde omnis </h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
+              <div class="flex flex-row justify-start">
                 <p class="text-description font-acumin">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
               </div>
-              <div class="doping__link--wrapper mt-4">
-                <a class="doping__link" href="#">Daha Fazla Detay</a>
+              <div class="flex flex-row items-center gap-x-2">
+                <a class="text-description text-magenta" href="#">Daha Fazla Detay</a>
                 <img src="./assets/arrow-link.svg" />
               </div>
             </div>
-            <div class="mt-40" id="singleArticle">
+            <div class="flex flex-col gap-y-3 sm:gap-y-4" id="singleArticle">
               <div class="relative">
-                <img class="rounded-2xl" src="https://placehold.co/500x668" />
-                <p class="absolute top-0 right-0 mr-6 mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Sektör</p>
+                <img class="rounded sm:rounded-2xl" src="https://placehold.co/500x668" />
+                <p class="absolute top-0 right-0 mr-4 mt-4 sm:mr-6 sm:mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Teknoloji</p>
               </div>
-              <div class="flex flex-row justify-between mt-4">
+              <div class="flex flex-row justify-between">
                 <p class="text-description font-acumin">20.09.24</p>
                 <p class="text-description font-acumin">8 dk Okuma Süresi</p>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="text-title font-abril text-magenta">Lorem İpsum Dor Samet</h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-2xl sm:text-4xl font-abril text-magenta">Lorem İpsum Dor Samet</h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="blog-title font-acumin">Sed ut perspiciatis unde omnis </h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-lg sm:text-3xl font-acumin">Sed ut perspiciatis unde omnis </h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
+              <div class="flex flex-row justify-start">
                 <p class="text-description font-acumin">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
               </div>
-              <div class="doping__link--wrapper mt-4">
-                <a class="doping__link" href="#">Daha Fazla Detay</a>
+              <div class="flex flex-row items-center gap-x-2">
+                <a class="text-description text-magenta" href="#">Daha Fazla Detay</a>
                 <img src="./assets/arrow-link.svg" />
               </div>
             </div>
-            <div class="mt-40" id="singleArticle">
+            <div class="flex flex-col gap-y-3 sm:gap-y-4" id="singleArticle">
               <div class="relative">
-                <img class="rounded-2xl" src="https://placehold.co/500x668" />
-                <p class="absolute top-0 right-0 mr-6 mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Sektör</p>
+                <img class="rounded sm:rounded-2xl" src="https://placehold.co/500x668" />
+                <p class="absolute top-0 right-0 mr-4 mt-4 sm:mr-6 sm:mt-8 px-2.5 py-0.5 text-sm radius text-white bg-magenta">Teknoloji</p>
               </div>
-              <div class="flex flex-row justify-between mt-4">
+              <div class="flex flex-row justify-between">
                 <p class="text-description font-acumin">20.09.24</p>
                 <p class="text-description font-acumin">8 dk Okuma Süresi</p>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="text-title font-abril text-magenta">Lorem İpsum Dor Samet</h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-2xl sm:text-4xl font-abril text-magenta">Lorem İpsum Dor Samet</h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
-                <h3 class="blog-title font-acumin">Sed ut perspiciatis unde omnis </h3>
+              <div class="flex flex-row justify-start">
+                <h5 class="text-lg sm:text-3xl font-acumin">Sed ut perspiciatis unde omnis </h5>
               </div>
-              <div class="flex flex-row justify-start mt-4">
+              <div class="flex flex-row justify-start">
                 <p class="text-description font-acumin">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam...</p>
               </div>
-              <div class="doping__link--wrapper mt-4">
-                <a class="doping__link" href="#">Daha Fazla Detay</a>
+              <div class="flex flex-row items-center gap-x-2">
+                <a class="text-description text-magenta" href="#">Daha Fazla Detay</a>
                 <img src="./assets/arrow-link.svg" />
               </div>
             </div>
           </div>
         </div>
-        <h3 class="works__title mt-16">DAHA FAZLA GÖR</h3>
+        <h5 class="text-center text-description hidden sm:block">DAHA FAZLA GÖR</h5>
+        <a href="#" class="flex flex-row gap-x-8 block sm:hidden justify-center items-center self-center border rounded-full px-20 py-2 mt-8">
+          <span>Daha Fazla Göster</span>
+          <img src="./assets/arrow-link.svg" />
+        </a>
       </section>
-      <section>
-        <div class="container mx-auto mt-20 flex flex-col items-center justify-center">
-          <h3 class="text-white w-full text-center text-description font-abril">Bizimle İletişime Geçin</h3>
+      <section class="container mx-auto">
+        <div class="flex flex-col items-center justify-center">
+          <h3 class="text-white w-full text-center text-xl font-abril">Bizimle İletişime Geçin</h3>
           <div class="form-wrapper font-acumin">
             <form action="" class="form" id="contact-form">
               <div class="form-group">
@@ -221,8 +229,8 @@
                 <input id="color" class="form-input" type="text" />
               </div>
             </form>
-            <button class="text-white font-acumin mt-10 mb-12 text-description px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
-            <div class="flex flex-row justify-between items-center w-full text-description text-white">
+            <button class="text-white font-acumin my-12 text-description sm:py-0 py-2 px-12 rounded-lg bg-magenta" type="submit" form="contact-form">Gönder</button>
+            <div class="flex flex-col md:flex-row gap-y-6 justify-between items-center w-full text-description text-white">
               <div class="flex flex-row items-center gap-x-3">
                 <img src="./assets/whatsapp.svg" />
                 <p class="text-lg">Şimdi Mail Atın</p>
@@ -238,22 +246,18 @@
         </div>
       </section>
     </main>
-
-    <footer class="footer">
-      <div class="footer__wrapper">
-        <div class="footer__logo">
-          <img src="./assets/footer-logo.svg" />
-        </div>
-        <p class="footer__copy">Copyright © 2023 fikirmedya, Created by Advermedia</p>
-        <div class="footer__social">
-          <img src="./assets/facebook.svg" />
-          <img src="./assets/youtube.svg" />
-          <img src="./assets/instagram.svg" />
-          <img src="./assets/linkedin.svg" />
+    <footer class="bg-white">
+      <div class="container mx-auto flex flex-col gap-y-12 md:flex-row justify-between items-center md:px-0 px-6 py-12">
+        <img src="./assets/footer-logo.svg" />
+        <p class="text-black text-center order-first md:order-none">Copyright © 2023 fikirmedya, Created by Advermedia</p>
+        <div class="flex flex-row gap-x-4">
+          <a href="#"><img src="./assets/facebook.svg" /></a>
+          <a href="#"><img src="./assets/youtube.svg" /></a>
+          <a href="#"><img src="./assets/instagram.svg" /></a>
+          <a href="#"><img src="./assets/linkedin.svg" /></a>
         </div>
       </div>
     </footer>
-
     <script src="script.js"></script>
   </body>
 </html>
