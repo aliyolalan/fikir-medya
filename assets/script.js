@@ -10,7 +10,7 @@ document.addEventListener("DOMContentLoaded", () => {
   // document.body.style.overflow = "hidden";
 
   let index = 0;
-  const typingSpeed = 5; // Her harfin yazılma süresi (ms)
+  const typingSpeed = 20; // Her harfin yazılma süresi (ms)
 
   function typeWriter() {
     if (index < text.length || index < textSecond.length) {
@@ -25,7 +25,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         // Splash ekran kaybolduktan sonra kaydırmayı etkinleştir
         // document.body.style.overflow = "auto";
-      }, 300); // Yazı yazıldıktan 1 saniye sonra splash ekranını kaydırma
+      }, 3000); // Yazı yazıldıktan 1 saniye sonra splash ekranını kaydırma
     }
   }
 
