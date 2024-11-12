@@ -17,11 +17,11 @@
   </head>
   <body>
     <!-- Splash Screen -->
-    <div class="splash bg-[url('/assets/splash-mobile-background.png')] sm:bg-[url('/assets/star-vector.png')] bg-center bg-cover z-50" id="splashScreen">
+    <!-- <div class="splash bg-[url('/assets/splash-mobile-background.png')] sm:bg-[url('/assets/star-vector.png')] bg-center bg-cover z-50" id="splashScreen">
       <p class="text-description px-6 sm:px-0 text-center max-w-[800px] mt-36 mb-6 sm:mb-12" id="typewriterText"></p>
       <p class="text-description px-6 sm:px-0 text-center font-abril max-w-[800px] mb-12 sm:mb-24" id="typewriterTextSecond"></p>
       <img class="h-20 sm:h-40 z-10 arrow" src="./assets/line.svg" />
-    </div>
+    </div> -->
 
     <!-- Menu Screen -->
     <nav
@@ -148,13 +148,16 @@
         <img class="h-40 z-10 arrow hidden sm:block" src="./assets/line.svg" />
       </section>
       <section class="bg-magenta flex relative sm:-mt-32">
-        <div class="container flex flex-col gap-y-8 sm:gap-y-0 text-2xl sm:text-4xl font-abril sm:leading-relaxed my-28 sm:my-40 px-6 sm:px-0">
+        <div class="container relative flex flex-col gap-y-8 sm:gap-y-0 text-2xl sm:text-4xl font-abril sm:leading-relaxed my-10 sm:my-40 py-4 sm:py-12 px-6 sm:px-0">
+          <img class="flex self-start sm:absolute top-0 right-0" src="./assets/slogan-star.svg" />
           <p class="text-left sm:text-center text-black">
             Markalarımızı bulunduğu yerden ileriye götürmek, dönüştürmek ve yenilemek için çalışıyoruz. Biz aslında tutkumuzu paylaşıyoruz.
           </p>
           <p class="text-right sm:text-center text-white">İçine yeni bir fikir koyamayacağımız, aynılık adasında olmayı tercih eden herhangi bir markayla çalışmıyoruz.</p>
+          <img class="flex self-end sm:absolute bottom-0 left-0 sm:rotate-180" src="./assets/slogan-star.svg" />
         </div>
-        <img class="absolute top-0 right-20 hidden sm:block" src="./assets/asteriks-black.svg" />
+        <img class="absolute -translate-x-1/2 -translate-y-1/2 top-12 right-20 hidden sm:block" src="./assets/asteriks-black.svg" />
+        <img class="absolute inset-x-1/2 -translate-x-1/2 -translate-y-1/2 top-4 block sm:hidden" src="./assets/asteriks-black-sm.svg" />
       </section>
       <section class="container mx-auto px-6 sm:px-0">
         <div class="flex flex-col items-center justify-center">
